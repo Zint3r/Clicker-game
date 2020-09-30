@@ -1,0 +1,908 @@
+fileFormatVersion: 2
+guid: 26035c518f0eb0a43b675e499ac443b6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8039230645592009848
+    second: rpg armor weapon_0
+  - first:
+      213: -8216555744186139362
+    second: rpg armor weapon_1
+  - first:
+      213: -8040975341734295284
+    second: rpg armor weapon_2
+  - first:
+      213: 522716039714908578
+    second: rpg armor weapon_3
+  - first:
+      213: 73102936873190388
+    second: rpg armor weapon_4
+  - first:
+      213: -2854026734004188039
+    second: rpg armor weapon_5
+  - first:
+      213: -4421721927057299994
+    second: rpg armor weapon_6
+  - first:
+      213: 6816306598346219000
+    second: rpg armor weapon_7
+  - first:
+      213: -5524456820005558620
+    second: rpg armor weapon_8
+  - first:
+      213: -7995318688141442611
+    second: rpg armor weapon_9
+  - first:
+      213: -7780241456683193726
+    second: rpg armor weapon_10
+  - first:
+      213: 274204498913483587
+    second: rpg armor weapon_11
+  - first:
+      213: 6554660709724162062
+    second: rpg armor weapon_12
+  - first:
+      213: -7158299738454668654
+    second: rpg armor weapon_13
+  - first:
+      213: 4605285996620840918
+    second: rpg armor weapon_14
+  - first:
+      213: -3494190015792772773
+    second: rpg armor weapon_15
+  - first:
+      213: 5619250688753916378
+    second: rpg armor weapon_16
+  - first:
+      213: -4907458559933644133
+    second: rpg armor weapon_17
+  - first:
+      213: 2319012865107512544
+    second: rpg armor weapon_18
+  - first:
+      213: -4365595624692532979
+    second: rpg armor weapon_19
+  - first:
+      213: -5023503408533542845
+    second: rpg armor weapon_20
+  - first:
+      213: 3059999813534829
+    second: rpg armor weapon_21
+  - first:
+      213: 4706976872991562295
+    second: rpg armor weapon_22
+  - first:
+      213: 4846574974931354831
+    second: rpg armor weapon_23
+  - first:
+      213: 253558339884029481
+    second: rpg armor weapon_24
+  - first:
+      213: 5060792584097549082
+    second: rpg armor weapon_25
+  - first:
+      213: 9018954278706175944
+    second: rpg armor weapon_26
+  - first:
+      213: -1490900588136338186
+    second: rpg armor weapon_27
+  - first:
+      213: -7998968003963956535
+    second: rpg armor weapon_28
+  - first:
+      213: -5461105923371305091
+    second: rpg armor weapon_29
+  - first:
+      213: -1707683556180149523
+    second: rpg armor weapon_30
+  - first:
+      213: -3182059365804060530
+    second: rpg armor weapon_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rpg armor weapon_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 209
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883dd0e425aee6090800000000000000
+      internalID: -8039230645592009848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 207
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1df696751ee8fd80800000000000000
+      internalID: -8216555744186139362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_2
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 207
+        width: 56
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0980449787b86090800000000000000
+      internalID: -8040975341734295284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 206
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a92b99f77f014700800000000000000
+      internalID: 522716039714908578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_4
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 206
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f34d58dbb6b30100800000000000000
+      internalID: 73102936873190388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_5
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 202
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c46348ec57468d0800000000000000
+      internalID: -2854026734004188039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_6
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 206
+        width: 60
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5a13aa553e2a2c0800000000000000
+      internalID: -4421721927057299994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_7
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 200
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fdd392acb2689e50800000000000000
+      internalID: 6816306598346219000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_8
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 154
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6a592cacf2553b0800000000000000
+      internalID: -5524456820005558620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_9
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 154
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1894f930cea0190800000000000000
+      internalID: -7995318688141442611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_10
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 156
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a61abdd97070490800000000000000
+      internalID: -7780241456683193726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_11
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 149
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b5d89f98b2ec300800000000000000
+      internalID: 274204498913483587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_12
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 149
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08815aff25d6fa50800000000000000
+      internalID: 6554660709724162062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_13
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 147
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a43ad605c98ac90800000000000000
+      internalID: -7158299738454668654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_14
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 147
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df7aadc63349ef30800000000000000
+      internalID: 4605285996620840918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_15
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 145
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5984f291b4228fc0800000000000000
+      internalID: -3494190015792772773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_16
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 93
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9db07bab69bfd40800000000000000
+      internalID: 5619250688753916378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_17
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 91
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b928439c07435ebb0800000000000000
+      internalID: -4907458559933644133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_18
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 93
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec4b460ae9ce2020800000000000000
+      internalID: 2319012865107512544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_19
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 86
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09b335c8e94a63c0800000000000000
+      internalID: -4365595624692532979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_20
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 82
+        width: 38
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348e46ef34ee84ab0800000000000000
+      internalID: -5023503408533542845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_21
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 82
+        width: 46
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6406e9bd0fda0000800000000000000
+      internalID: 3059999813534829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_22
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 82
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a14a0078a825140800000000000000
+      internalID: 4706976872991562295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_23
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 82
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4c41ee24e724340800000000000000
+      internalID: 4846574974931354831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_24
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 17
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92610aa77f1d48300800000000000000
+      internalID: 253558339884029481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_25
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 21
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1bc011ca0c8b3640800000000000000
+      internalID: 5060792584097549082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_26
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 21
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf55cbc123c92d70800000000000000
+      internalID: 9018954278706175944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_27
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 23
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc66b070d14f4be0800000000000000
+      internalID: -1490900588136338186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_28
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 19
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c253021bf4fdf090800000000000000
+      internalID: -7998968003963956535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_29
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 21
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77fbacc8114634b0800000000000000
+      internalID: -5461105923371305091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_30
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 17
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea3b157ad61d48e0800000000000000
+      internalID: -1707683556180149523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg armor weapon_31
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 17
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e805b07bddd07d3d0800000000000000
+      internalID: -3182059365804060530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
