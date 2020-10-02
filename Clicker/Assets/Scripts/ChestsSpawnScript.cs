@@ -14,7 +14,7 @@ public class ChestsSpawnScript : MonoBehaviour
         GameObject obj = Instantiate(chestObj);
         float posX = (Screen.width - spawnPanel.rect.width) / 50;
         float posY = (Screen.height - spawnPanel.rect.height) / 150;
-        obj.transform.position += new Vector3(Random.Range(- posX, posX), Random.Range(-posY, posY), 0);       
+        obj.transform.position += new Vector3(Random.Range(-posX, posX) + Camera.main.transform.position.x, Random.Range(-posY, posY) + Camera.main.transform.position.y, 0);       
     }
     private void TimeToSpawn(float timeToSpawn)
     {

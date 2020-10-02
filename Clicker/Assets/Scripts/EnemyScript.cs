@@ -17,18 +17,17 @@ public class EnemyScript : MonoBehaviour
     private bool _isEnemyAttack = false;
     public bool IsEnemyAttack { get => _isEnemyAttack; }
     public int EnemyLevel { get => _enemyLevel; set => _enemyLevel = value; }
-
     void Start()
     {
         EnemyStatsScale();
         _maxEnemyHP = _enemyHP;        
         _animator = GetComponent<Animator>();
         _animationLength = GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length;
-        links = FindObjectOfType<LinksScript>();
+        links = FindObjectOfType<LinksScript>();        
     }   
     void Update()
     {
-        EnemyAttackAndAnimation();
+        EnemyAttackAndAnimation();        
     }
     public string GetEnemyName()
     {
@@ -49,13 +48,13 @@ public class EnemyScript : MonoBehaviour
     }
     private void EnemyAttackAndAnimation()
     {
-        if (_currentTimer >= _enemyCooldawnAttack && _animator.GetBool("EnemyAttack") == false && _enemyHP > 0)
+        if (_currentTimer >= _enemyCooldawnAttack && _isEnemyAttack == false && _enemyHP > 0)
         {
             _currentTimer = 0;
             _animator.SetBool("EnemyAttack", true);
             _isEnemyAttack = true;
         }
-        else if (_currentTimer >= _animationLength && _animator.GetBool("EnemyAttack") == true && _enemyHP > 0)
+        else if (_currentTimer >= _animationLength && _isEnemyAttack == true && _enemyHP > 0)
         {
             _animator.SetBool("EnemyAttack", false);
             _isEnemyAttack = false;

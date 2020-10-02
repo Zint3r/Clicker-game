@@ -47,7 +47,7 @@ public class PlayerUiScript : MonoBehaviour
     public void EndGame()
     {
         endGamePanel.SetActive(true);
-        goldCountText.text = links.PlayerStats.GoldCount.ToString();
+        goldCountText.text = "Gold " + links.PlayerStats.GoldCount.ToString();
     }
     public void ChangeHpUi(int currentHp, int maxHp)
     {
