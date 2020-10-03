@@ -109,8 +109,7 @@ public class PlayerStatsScript : MonoBehaviour
             {
                 currentPlayerHp = 0;                
             }
-        }
-        
+        }        
     }
     public void ReceivingGold(int gold)
     {

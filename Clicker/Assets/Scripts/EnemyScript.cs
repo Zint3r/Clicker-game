@@ -70,8 +70,7 @@ public class EnemyScript : MonoBehaviour
     public void EnemyReceiveDamage(int damage)
     {        
         _enemyHP -= damage;
-        EnemyUI.ChangeEnemyHP((float) damage/_maxEnemyHP);
-        
+        EnemyUI.ChangeEnemyHP((float) damage/_maxEnemyHP);        
     }
     public bool EnemeDead()
     {

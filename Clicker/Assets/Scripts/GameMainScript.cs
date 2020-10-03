@@ -33,10 +33,26 @@ public class GameMainScript : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(clickPosition, Vector2.zero);
         if (hit.collider != null)
         {
-            if (hit.collider.GetComponent<ChestScript>() == true)
+            if (hit.collider.GetComponent<ItemScript>() == true)
             {
-                hit.collider.GetComponent<ChestScript>().OnChestClick();
-                links.PlayerStats.ReceivingGold(50);
+                ItemScript item = hit.collider.GetComponent<ItemScript>();
+                if (item.GoldChest == true)
+                {
+                    links.PlayerStats.ReceivingGold(Random.Range(5, 25));
+                }
+                else if (item.HpPotion == true)
+                {
+                    int hp = (int)(links.PlayerStats.MaxPlayerHp * 0.25);
+                    links.PlayerStats.RegenHp(hp);
+                    links.PlayerUi.ChangeHpUi(links.PlayerStats.CurrentPlayerHp, links.PlayerStats.MaxPlayerHp);
+                }
+                else if (item.MpPotion == true)
+                {
+                    int mp = (int)(links.PlayerStats.MaxPlayerMp * 0.25);
+                    links.PlayerStats.RegenMp(mp);
+                    links.PlayerUi.ChangeMpUi(links.PlayerStats.CurrentPlayerMp, links.PlayerStats.MaxPlayerMp);
+                }
+                hit.collider.GetComponent<ItemScript>().OnChestClick();                
             }
         }             
     }    
