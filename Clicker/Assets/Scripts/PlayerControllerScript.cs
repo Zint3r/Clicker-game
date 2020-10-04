@@ -5,6 +5,8 @@ public class PlayerControllerScript : MonoBehaviour
     private LinksScript links = null;
     [SerializeField] private PlayerClickController playerAttackButton = null;
     [SerializeField] private PlayerClickController playerDefensButton = null;
+    [SerializeField] private PlayerClickController playerSpellButton = null;
+    [SerializeField] private PlayerClickController playerBuffsButton = null;
     [SerializeField] private BackGroundScript backGround = null;
     private Camera cam = null;
     private PlayerUiScript playerUi = null;
@@ -26,11 +28,15 @@ public class PlayerControllerScript : MonoBehaviour
     {
         playerAttackButton.OnClick += PlayerAttack;
         playerDefensButton.OnClick += PlayerDefense;
+        playerSpellButton.OnClick += PlayerSpell;
+        playerBuffsButton.OnClick += PlayerBuff;
     }
     private void OnDisable()
     {
         playerAttackButton.OnClick -= PlayerAttack;
         playerDefensButton.OnClick -= PlayerDefense;
+        playerSpellButton.OnClick -= PlayerSpell;
+        playerBuffsButton.OnClick -= PlayerBuff;
     }    
     public void PlayerAttack()
     {
@@ -48,6 +54,21 @@ public class PlayerControllerScript : MonoBehaviour
             playerUi.BlockPosible = false;
             PlayerHit(2);
         }
+    }
+    public void PlayerSpell()
+    {
+        if (gameMain.CurrentEnemy != null && !gameMain.CurrentEnemy.EnemeDead() && links.PlayerStats.ManaCost(5))
+        {
+            int damage = links.PlayerStats.SpellDamage;
+            gameMain.CurrentEnemy.EnemyReceiveDamage(damage);
+            playerUi.DamageTextAnimation(damage);
+            KillEnemy();
+            playerUi.ChangeMpUi(links.PlayerStats.CurrentPlayerMp, links.PlayerStats.MaxPlayerMp);            
+        }
+    }
+    public void PlayerBuff()
+    {
+        Debug.Log("бафф пошел");
     }
     private void NextEnemy()
     {

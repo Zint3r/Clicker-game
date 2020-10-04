@@ -1,28 +1,28 @@
 ﻿using UnityEngine;
 public class EnemyScript : MonoBehaviour
 {
-    private Animator _animator = null;
-    private float _animationLength;
-    private float _currentTimer = 0;
-    private int _maxEnemyHP;
-    private int _enemyDamage = 1;
-    private LinksScript links = null;    
-    private int _enemyHP = 10;
-    [SerializeField] private string _enemyName = null;
-    [SerializeField, Range(1, 20)] private int _enemyLevel = 1;
-    [SerializeField] private float _enemyCooldawnAttack = 2f;
+    [SerializeField] private string enemyName = null;
+    [SerializeField, Range(1, 20)] private int enemyLevel = 1;
+    [SerializeField] private float enemyCooldawnAttack = 2f;
     [SerializeField, Range(1, 3)] private int hardMod = 1;
+    private LinksScript links = null;
+    private Animator animator = null;
     private EnemyUiScript enemyUI = null;
-    public EnemyUiScript EnemyUI { get => enemyUI; set => enemyUI = value; }
-    private bool _isEnemyAttack = false;
-    public bool IsEnemyAttack { get => _isEnemyAttack; }
-    public int EnemyLevel { get => _enemyLevel; set => _enemyLevel = value; }
+    private float animationLength;
+    private float currentTimer = 0;
+    private int maxEnemyHP;
+    private int enemyDamage = 1;       
+    private int enemyHP = 10;
+    private bool isEnemyAttack = false;    
+    public EnemyUiScript EnemyUI { get => enemyUI; set => enemyUI = value; }    
+    public bool IsEnemyAttack { get => isEnemyAttack; }
+    public int EnemyLevel { get => enemyLevel; set => enemyLevel = value; }
     void Start()
     {
         EnemyStatsScale();
-        _maxEnemyHP = _enemyHP;        
-        _animator = GetComponent<Animator>();
-        _animationLength = GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length;
+        maxEnemyHP = enemyHP;        
+        animator = GetComponent<Animator>();
+        animationLength = GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length;
         links = FindObjectOfType<LinksScript>();        
     }   
     void Update()
@@ -31,53 +31,53 @@ public class EnemyScript : MonoBehaviour
     }
     public string GetEnemyName()
     {
-        return _enemyName;
+        return enemyName;
     }
     public int GetEnemyLevel()
     {
-        return _enemyLevel;
+        return enemyLevel;
     }
     public int EnemyDamage()
     {
-        return (int)Random.Range(_enemyDamage / 2, _enemyDamage * 2);
+        return (int)Random.Range(enemyDamage / 2, enemyDamage * 2);
     }
     private void EnemyStatsScale()
     {
-        _enemyHP += _enemyLevel * hardMod * 25;
-        _enemyDamage += _enemyLevel * 2 + hardMod * 3;
+        enemyHP += enemyLevel * hardMod * 25;
+        enemyDamage += enemyLevel * 2 + hardMod * 3;
     }
     private void EnemyAttackAndAnimation()
     {
-        if (_currentTimer >= _enemyCooldawnAttack && _isEnemyAttack == false && _enemyHP > 0)
+        if (currentTimer >= enemyCooldawnAttack && isEnemyAttack == false && enemyHP > 0)
         {
-            _currentTimer = 0;
-            _animator.SetBool("EnemyAttack", true);
-            _isEnemyAttack = true;
+            currentTimer = 0;
+            animator.SetBool("EnemyAttack", true);
+            isEnemyAttack = true;
         }
-        else if (_currentTimer >= _animationLength && _isEnemyAttack == true && _enemyHP > 0)
+        else if (currentTimer >= animationLength && isEnemyAttack == true && enemyHP > 0)
         {
-            _animator.SetBool("EnemyAttack", false);
-            _isEnemyAttack = false;
-            _currentTimer += Time.deltaTime;
+            animator.SetBool("EnemyAttack", false);
+            isEnemyAttack = false;
+            currentTimer += Time.deltaTime;
             links.PlayerStats.ReceivingDamage(EnemyDamage());
             links.PlayerUi.ChangeHpUi(links.PlayerStats.CurrentPlayerHp, links.PlayerStats.MaxPlayerHp);
         }
         else
         {
-            _currentTimer += Time.deltaTime;            
+            currentTimer += Time.deltaTime;            
         }
     }
     public void EnemyReceiveDamage(int damage)
     {        
-        _enemyHP -= damage;
-        EnemyUI.ChangeEnemyHP((float) damage/_maxEnemyHP);        
+        enemyHP -= damage;
+        EnemyUI.ChangeEnemyHP((float) damage/maxEnemyHP);        
     }
     public bool EnemeDead()
     {
-        if (_enemyHP <= 0)
+        if (enemyHP <= 0)
         {
-            _animator.SetBool("EnemyDead", true);
-            _enemyHP = 0;
+            animator.SetBool("EnemyDead", true);
+            enemyHP = 0;
             return true;
         }
         else

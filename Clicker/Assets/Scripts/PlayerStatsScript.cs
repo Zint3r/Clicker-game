@@ -18,11 +18,13 @@ public class PlayerStatsScript : MonoBehaviour
     private int minDamage;
     private int maxDamage;
     private int weaponDamage;
+    private int spellDamage;
     private int criticalChance;
     private int expToLevelUp = 200;
     private int currentExp = 0;
     private int goldCount;
     private int locationLevel = 1;
+    private bool currentHit = false;
     public int Strength { get => strength; }
     public int Intellect { get => intellect; }
     public int StartStamina { get => stamina; }
@@ -40,12 +42,10 @@ public class PlayerStatsScript : MonoBehaviour
     public int Armor { get => armor; set => armor = value; }
     public int GoldCount { get => goldCount; set => goldCount = value; }
     public int LocationLevel { get => locationLevel; }
-
-    private bool currentHit = false;
+    public int SpellDamage { get => spellDamage; set => spellDamage = value; }    
     private void Awake()
     {
-        path = Application.dataPath + "/Save.json";
-        Debug.Log(path);
+        path = Application.dataPath + "/Save.json";        
         CalculateAllStats();
         currentPlayerHp = maxPlayerHp;
         currentPlayerMp = maxPlayerMp / 2;
@@ -82,6 +82,18 @@ public class PlayerStatsScript : MonoBehaviour
         else
         {
             currentPlayerMp = maxPlayerMp;
+        }
+    }
+    public bool ManaCost(int cost)
+    {
+        if (currentPlayerMp >= cost)
+        {
+            currentPlayerMp -= cost;
+            return true;
+        }
+        else 
+        { 
+            return false;
         }
     }
     public void ReceivingExp(int exp)
@@ -125,8 +137,12 @@ public class PlayerStatsScript : MonoBehaviour
     }
     private void CalculateDamage()
     {
-        minDamage = 5 + weaponDamage + Strength * 2;
-        maxDamage = 10 + weaponDamage + Strength * 2;
+        minDamage = 5 + weaponDamage + strength * 2;
+        maxDamage = 10 + weaponDamage + strength * 2;
+    }
+    private void CalculateSpellDamage()
+    {
+        spellDamage = 5 + intellect * 4;
     }
     private void CalculateCriticalChance()
     {
@@ -137,6 +153,7 @@ public class PlayerStatsScript : MonoBehaviour
         CalculateHp();
         CalculateMp();
         CalculateDamage();
+        CalculateSpellDamage();
         CalculateCriticalChance();
     }
     private bool CheckCriticalStrike()

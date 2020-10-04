@@ -667,7 +667,7 @@ GameObject:
   - component: {fileID: 161602250}
   - component: {fileID: 161602249}
   m_Layer: 5
-  m_Name: Button Spell 2
+  m_Name: Button Buff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2373,6 +2373,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerAttackButton: {fileID: 1136360267}
   playerDefensButton: {fileID: 1506030365}
+  playerSpellButton: {fileID: 1846281521}
+  playerBuffsButton: {fileID: 161602250}
   backGround: {fileID: 1550864109}
 --- !u!114 &857401480
 MonoBehaviour:
@@ -4483,7 +4485,7 @@ GameObject:
   - component: {fileID: 1846281521}
   - component: {fileID: 1846281520}
   m_Layer: 5
-  m_Name: Button Spell 1
+  m_Name: Button Spell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
