@@ -15,6 +15,8 @@ public class PlayerControllerScript : MonoBehaviour
     private float moveTimer = 0;
     private bool cooldown = false;
     private Vector3 nextPosition;
+    private int continuitySpell = 0;
+    private float continuitySpellCurrentTimer = 0;
     public bool Cooldown { set => cooldown = value; }
     private void Start()
     {
@@ -23,6 +25,10 @@ public class PlayerControllerScript : MonoBehaviour
         playerUi = links.PlayerUi;
         gameMain = links.GameMain;
         enemySpawn = links.EnemySpawn;
+    }
+    private void Update()
+    {
+        ContinuitySpellTimer();
     }
     private void OnEnable()
     {
@@ -59,8 +65,9 @@ public class PlayerControllerScript : MonoBehaviour
     {
         if (gameMain.CurrentEnemy != null && !gameMain.CurrentEnemy.EnemeDead() && links.PlayerStats.ManaCost(5))
         {
+            continuitySpell++;
             int damage = links.PlayerStats.SpellDamage;
-            gameMain.CurrentEnemy.EnemyReceiveDamage(damage);
+            gameMain.CurrentEnemy.EnemyReceiveDamage(damage * continuitySpell);
             playerUi.DamageTextAnimation(damage);
             KillEnemy();
             playerUi.ChangeMpUi(links.PlayerStats.CurrentPlayerMp, links.PlayerStats.MaxPlayerMp);            
@@ -138,5 +145,17 @@ public class PlayerControllerScript : MonoBehaviour
             playerUi.ChangeExpUi(links.PlayerStats.CurrentExp, links.PlayerStats.ExpToLevelUp);
             NextEnemy();
         }                    
+    }
+    private void ContinuitySpellTimer()
+    {
+        if (continuitySpellCurrentTimer < 3)
+        {
+            continuitySpellCurrentTimer += Time.deltaTime;
+        }
+        else
+        {
+            continuitySpellCurrentTimer = 0;
+            continuitySpell = 0;
+        }
     }
 }
