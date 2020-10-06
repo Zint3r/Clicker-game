@@ -16,6 +16,7 @@ public class PlayerUiScript : MonoBehaviour
     [SerializeField] private Slider sliderMp = null;
     [SerializeField] private GameObject endGamePanel = null;
     [SerializeField] private Text goldCountText = null;
+    [SerializeField] private Image[] spellMultiImg = null;
     private PlayerControllerScript playerController = null;
     private GameMainScript gameMain = null;
     private float maxDuration = 0;
@@ -85,6 +86,31 @@ public class PlayerUiScript : MonoBehaviour
         maxDuration = cooldown;
         currentDuration = cooldown;
         attackCooldownImg.gameObject.SetActive(true);        
+    }
+    public void SpellMultyOn(int index)
+    {
+        index--;
+        if (index <= spellMultiImg.Length)
+        {
+            for (int i = 0; i < spellMultiImg.Length; i++)
+            {
+                if (i == index)
+                {
+                    spellMultiImg[i].enabled = true;
+                }
+                else
+                {
+                    spellMultiImg[i].enabled = false;
+                }
+            }
+        }
+    }
+    public void SpellMultyOff()
+    {
+        for (int i = 0; i < spellMultiImg.Length; i++)
+        {
+            spellMultiImg[i].enabled = false;
+        }
     }
     private void AttackCooldown()
     {

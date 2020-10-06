@@ -63,14 +63,18 @@ public class PlayerControllerScript : MonoBehaviour
     }
     public void PlayerSpell()
     {
-        if (gameMain.CurrentEnemy != null && !gameMain.CurrentEnemy.EnemeDead() && links.PlayerStats.ManaCost(5))
+        if (gameMain.CurrentEnemy != null && !gameMain.CurrentEnemy.EnemeDead() && links.PlayerStats.ManaCost(1))
         {
-            continuitySpell++;
-            int damage = links.PlayerStats.SpellDamage;
-            gameMain.CurrentEnemy.EnemyReceiveDamage(damage * continuitySpell);
+            if (continuitySpell < 3)
+            {
+                continuitySpell++;
+            }            
+            int damage = links.PlayerStats.PlayerSpellDamage() * continuitySpell;
+            gameMain.CurrentEnemy.EnemyReceiveDamage(damage);
             playerUi.DamageTextAnimation(damage);
             KillEnemy();
-            playerUi.ChangeMpUi(links.PlayerStats.CurrentPlayerMp, links.PlayerStats.MaxPlayerMp);            
+            playerUi.ChangeMpUi(links.PlayerStats.CurrentPlayerMp, links.PlayerStats.MaxPlayerMp);
+            playerUi.SpellMultyOn(continuitySpell);
         }
     }
     public void PlayerBuff()
@@ -156,6 +160,7 @@ public class PlayerControllerScript : MonoBehaviour
         {
             continuitySpellCurrentTimer = 0;
             continuitySpell = 0;
+            playerUi.SpellMultyOff();
         }
     }
 }

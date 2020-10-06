@@ -61,7 +61,19 @@ public class PlayerStatsScript : MonoBehaviour
         {
             return Random.Range(minDamage, maxDamage);
         }        
-    }    
+    }
+    public int PlayerSpellDamage()
+    {
+        currentHit = CheckCriticalStrike();
+        if (currentHit == true)
+        {
+            return spellDamage * 2;
+        }
+        else
+        {
+            return spellDamage;
+        }
+    }
     public void RegenHp(int hp)
     {
         if (currentPlayerHp + hp < maxPlayerHp)
