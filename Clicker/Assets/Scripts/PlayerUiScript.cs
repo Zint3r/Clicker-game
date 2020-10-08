@@ -5,7 +5,8 @@ public class PlayerUiScript : MonoBehaviour
 {
     private LinksScript links = null;
     [SerializeField] private Image attackCooldownImg = null;
-    [SerializeField] private Image defenseImg = null;    
+    [SerializeField] private Image defenseImg = null;
+    [SerializeField] private Image buffCooldownImg = null;
     [SerializeField] private PlayerClickController playerClickController = null;    
     [SerializeField] private GameObject playerDamageText = null;
     [SerializeField] private Text currentExpText = null;
@@ -110,6 +111,16 @@ public class PlayerUiScript : MonoBehaviour
         for (int i = 0; i < spellMultiImg.Length; i++)
         {
             spellMultiImg[i].enabled = false;
+        }
+    }
+    public void BuffCooldown(float duration)
+    {
+        buffCooldownImg.enabled = true;
+        buffCooldownImg.fillAmount -= Time.deltaTime / duration; 
+        if (buffCooldownImg.fillAmount == 0)
+        {
+            buffCooldownImg.enabled = false;
+            buffCooldownImg.fillAmount = 1;
         }
     }
     private void AttackCooldown()

@@ -16,7 +16,8 @@ public class PlayerControllerScript : MonoBehaviour
     private bool cooldown = false;
     private Vector3 nextPosition;
     private int continuitySpell = 0;
-    private float continuitySpellCurrentTimer = 0;
+    private float currentContinuitySpellTimer = 0;
+    private float currentBuffTimer = 0;
     public bool Cooldown { set => cooldown = value; }
     private void Start()
     {
@@ -79,7 +80,9 @@ public class PlayerControllerScript : MonoBehaviour
     }
     public void PlayerBuff()
     {
-        Debug.Log("бафф пошел");
+        links.PlayerStats.BuffDamageCalculate(100);
+        currentBuffTimer = 15f;
+        StartCoroutine(BuffTimmer(currentBuffTimer));
     }
     private void NextEnemy()
     {
@@ -152,15 +155,33 @@ public class PlayerControllerScript : MonoBehaviour
     }
     private void ContinuitySpellTimer()
     {
-        if (continuitySpellCurrentTimer < 3)
+        if (currentContinuitySpellTimer < 3)
         {
-            continuitySpellCurrentTimer += Time.deltaTime;
+            currentContinuitySpellTimer += Time.deltaTime;
         }
         else
         {
-            continuitySpellCurrentTimer = 0;
+            currentContinuitySpellTimer = 0;
             continuitySpell = 0;
             playerUi.SpellMultyOff();
         }
+    }
+    private IEnumerator BuffTimmer(float duration)
+    {
+        while (true)
+        {
+            if (currentBuffTimer > 0 )
+            {
+                currentBuffTimer -= Time.deltaTime;
+                links.PlayerUi.BuffCooldown(duration);
+            }
+            else
+            {
+                currentBuffTimer = 0;
+                links.PlayerStats.BuffDamageCalculate(0);
+                yield break;
+            }
+            yield return null;
+        }       
     }
 }

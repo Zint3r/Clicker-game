@@ -18,6 +18,7 @@ public class PlayerStatsScript : MonoBehaviour
     private int minDamage;
     private int maxDamage;
     private int weaponDamage;
+    private int buffDamage;
     private int spellDamage;
     private int criticalChance;
     private int expToLevelUp = 200;
@@ -42,7 +43,9 @@ public class PlayerStatsScript : MonoBehaviour
     public int Armor { get => armor; set => armor = value; }
     public int GoldCount { get => goldCount; set => goldCount = value; }
     public int LocationLevel { get => locationLevel; }
-    public int SpellDamage { get => spellDamage; set => spellDamage = value; }    
+    public int SpellDamage { get => spellDamage; set => spellDamage = value; }
+    public int BuffDamage { get => buffDamage; set => buffDamage = value; }
+
     private void Awake()
     {
         path = Application.dataPath + "/Save.json";        
@@ -139,6 +142,11 @@ public class PlayerStatsScript : MonoBehaviour
     {
         goldCount += gold;
     }
+    public void BuffDamageCalculate(int damage)
+    {
+        buffDamage = damage;
+        CalculateDamage();
+    }
     private void CalculateHp()
     {
         maxPlayerHp = 30 + stamina * 15 + playerLavel * 10;
@@ -149,8 +157,8 @@ public class PlayerStatsScript : MonoBehaviour
     }
     private void CalculateDamage()
     {
-        minDamage = 5 + weaponDamage + strength * 2;
-        maxDamage = 10 + weaponDamage + strength * 2;
+        minDamage = 5 + weaponDamage + buffDamage + strength * 2;
+        maxDamage = 10 + weaponDamage + buffDamage + strength * 2;
     }
     private void CalculateSpellDamage()
     {
