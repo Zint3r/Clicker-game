@@ -142,10 +142,22 @@ public class PlayerStatsScript : MonoBehaviour
     {
         goldCount += gold;
     }
+    public int BuffPower()
+    {
+        return playerLavel + intellect;
+    }
     public void BuffDamageCalculate(int damage)
     {
         buffDamage = damage;
         CalculateDamage();
+    }
+    public void BuffArmorCalculate(int addArmor)
+    {
+        armor += addArmor;
+    }
+    public void DownBuffArmor()
+    {
+        armor -= BuffPower();
     }
     private void CalculateHp()
     {

@@ -18,6 +18,7 @@ public class PlayerControllerScript : MonoBehaviour
     private int continuitySpell = 0;
     private float currentContinuitySpellTimer = 0;
     private float currentBuffTimer = 0;
+    private bool buffUp = false;
     public bool Cooldown { set => cooldown = value; }
     private void Start()
     {
@@ -64,7 +65,7 @@ public class PlayerControllerScript : MonoBehaviour
     }
     public void PlayerSpell()
     {
-        if (gameMain.CurrentEnemy != null && !gameMain.CurrentEnemy.EnemeDead() && links.PlayerStats.ManaCost(1))
+        if (gameMain.CurrentEnemy != null && !gameMain.CurrentEnemy.EnemeDead() && links.PlayerStats.ManaCost(5))
         {
             if (continuitySpell < 3)
             {
@@ -80,9 +81,16 @@ public class PlayerControllerScript : MonoBehaviour
     }
     public void PlayerBuff()
     {
-        links.PlayerStats.BuffDamageCalculate(100);
-        currentBuffTimer = 15f;
-        StartCoroutine(BuffTimmer(currentBuffTimer));
+        if (links.PlayerStats.ManaCost(10) && buffUp == false)
+        {
+            buffUp = true;
+            playerUi.ChangeMpUi(links.PlayerStats.CurrentPlayerMp, links.PlayerStats.MaxPlayerMp);
+            int buffPower = links.PlayerStats.BuffPower();
+            links.PlayerStats.BuffDamageCalculate(buffPower);
+            links.PlayerStats.BuffArmorCalculate(buffPower);
+            currentBuffTimer = 15f;
+            StartCoroutine(BuffTimmer(currentBuffTimer));
+        }        
     }
     private void NextEnemy()
     {
@@ -178,7 +186,9 @@ public class PlayerControllerScript : MonoBehaviour
             else
             {
                 currentBuffTimer = 0;
+                buffUp = false;
                 links.PlayerStats.BuffDamageCalculate(0);
+                links.PlayerStats.DownBuffArmor();
                 yield break;
             }
             yield return null;
