@@ -97,7 +97,7 @@ public class PlayerControllerScript : MonoBehaviour
         gameMain.CurrentEmenyNumber++;
         if (gameMain.EndGameCheck() == true)
         {
-            links.PlayerUi.EndGame();
+            links.PlayerUi.FinishGame();
         }
         else
         {

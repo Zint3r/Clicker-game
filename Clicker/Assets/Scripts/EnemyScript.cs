@@ -61,6 +61,11 @@ public class EnemyScript : MonoBehaviour
             currentTimer += Time.deltaTime;
             links.PlayerStats.ReceivingDamage(EnemyDamage());
             links.PlayerUi.ChangeHpUi(links.PlayerStats.CurrentPlayerHp, links.PlayerStats.MaxPlayerHp);
+            bool deadCheck = links.GameMain.GameOver(links.PlayerStats.CurrentPlayerHp);
+            if (deadCheck == true)
+            {
+                links.PlayerUi.GameOver();
+            }
         }
         else
         {

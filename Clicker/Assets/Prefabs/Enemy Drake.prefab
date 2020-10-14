@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ab841a28c1fe324e94db4b8c9090fef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyName: Drake
-  _enemyLevel: 1
-  _enemyCooldawnAttack: 2
+  enemyName: Drake
+  enemyLevel: 1
+  enemyCooldawnAttack: 2
   hardMod: 1

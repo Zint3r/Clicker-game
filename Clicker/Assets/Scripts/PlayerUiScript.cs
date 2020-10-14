@@ -15,8 +15,10 @@ public class PlayerUiScript : MonoBehaviour
     [SerializeField] private Slider sliderHp = null;
     [SerializeField] private Text currentMpText = null;
     [SerializeField] private Slider sliderMp = null;
-    [SerializeField] private GameObject endGamePanel = null;
-    [SerializeField] private Text goldCountText = null;
+    [SerializeField] private GameObject winPanel = null;
+    [SerializeField] private Text winGoldCountText = null;
+    [SerializeField] private GameObject deadPanel = null;
+    [SerializeField] private Text deadGoldCountText = null;
     [SerializeField] private Image[] spellMultiImg = null;
     private PlayerControllerScript playerController = null;
     private GameMainScript gameMain = null;
@@ -46,10 +48,15 @@ public class PlayerUiScript : MonoBehaviour
     {
         playerClickController.OnClick -= OnClickDefenseButton;
     }
-    public void EndGame()
+    public void FinishGame()
     {
-        endGamePanel.SetActive(true);
-        goldCountText.text = "Gold " + links.PlayerStats.GoldCount.ToString();
+        winPanel.SetActive(true);
+        winGoldCountText.text = "Gold " + links.PlayerStats.GoldCount.ToString();
+    }
+    public void GameOver()
+    {
+        deadPanel.SetActive(true);
+        deadGoldCountText.text = "Gold " + links.PlayerStats.GoldCount.ToString();
     }
     public void ChangeHpUi(int currentHp, int maxHp)
     {

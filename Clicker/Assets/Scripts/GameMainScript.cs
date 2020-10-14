@@ -74,5 +74,16 @@ public class GameMainScript : MonoBehaviour
         {            
             return false;
         }
-    }   
+    }
+    public bool GameOver(int playerHealth)
+    {
+        if (playerHealth <= 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
