@@ -117,4 +117,4 @@ MonoBehaviour:
   enemyName: Death Knight
   enemyLevel: 1
   enemyCooldawnAttack: 2
-  hardMod: 1
+  hardMod: 2

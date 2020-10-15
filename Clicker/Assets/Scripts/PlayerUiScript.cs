@@ -51,12 +51,12 @@ public class PlayerUiScript : MonoBehaviour
     public void FinishGame()
     {
         winPanel.SetActive(true);
-        winGoldCountText.text = "Gold " + links.PlayerStats.GoldCount.ToString();
+        winGoldCountText.text = "Gold " + links.PlayerStats.GoldCount.ToString();        
     }
     public void GameOver()
     {
         deadPanel.SetActive(true);
-        deadGoldCountText.text = "Gold " + links.PlayerStats.GoldCount.ToString();
+        deadGoldCountText.text = "Gold " + links.PlayerStats.GoldCount.ToString();        
     }
     public void ChangeHpUi(int currentHp, int maxHp)
     {

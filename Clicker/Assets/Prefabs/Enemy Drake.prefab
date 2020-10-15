@@ -116,5 +116,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Drake
   enemyLevel: 1
-  enemyCooldawnAttack: 2
-  hardMod: 1
+  enemyCooldawnAttack: 1.5
+  hardMod: 2

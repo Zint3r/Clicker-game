@@ -116,5 +116,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Thief
   enemyLevel: 1
-  enemyCooldawnAttack: 2
+  enemyCooldawnAttack: 1.5
   hardMod: 1

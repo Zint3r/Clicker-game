@@ -117,4 +117,4 @@ MonoBehaviour:
   enemyName: Red Dragon
   enemyLevel: 1
   enemyCooldawnAttack: 2
-  hardMod: 1
+  hardMod: 2

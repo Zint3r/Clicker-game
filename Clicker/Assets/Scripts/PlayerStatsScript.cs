@@ -49,9 +49,13 @@ public class PlayerStatsScript : MonoBehaviour
     private void Awake()
     {
         path = Application.dataPath + "/Save.json";        
-        CalculateAllStats();
+        CalculateAllStats();       
         currentPlayerHp = maxPlayerHp;
         currentPlayerMp = maxPlayerMp / 2;
+    }
+    public void UpLocationLevel()
+    {
+        locationLevel++;
     }
     public int PlayerMiddleDamage()
     {

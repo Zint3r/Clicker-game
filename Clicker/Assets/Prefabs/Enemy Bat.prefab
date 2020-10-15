@@ -116,5 +116,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Bat
   enemyLevel: 1
-  enemyCooldawnAttack: 2
+  enemyCooldawnAttack: 3
   hardMod: 1
