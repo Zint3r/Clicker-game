@@ -48,14 +48,15 @@ public class PlayerStatsScript : MonoBehaviour
 
     private void Awake()
     {
-        path = Application.dataPath + "/Save.json";        
-        CalculateAllStats();       
+        path = Application.dataPath + "/Save.json";
+        LoadPlayerStats();
+        locationLevel = ScenesParametrs.currentSceneLevel;
         currentPlayerHp = maxPlayerHp;
         currentPlayerMp = maxPlayerMp / 2;
     }
     public void UpLocationLevel()
     {
-        locationLevel++;
+        ScenesParametrs.NextSceneLevel();
     }
     public int PlayerMiddleDamage()
     {
@@ -272,18 +273,21 @@ public class PlayerStatsScript : MonoBehaviour
     }
     public void LoadPlayerStats()
     {
-        string jsonString = File.ReadAllText(path);
-        JSONObject playerJson = (JSONObject)JSON.Parse(jsonString);
-        playerLavel = playerJson["Level"];
-        strength = playerJson["Strength"];
-        intellect = playerJson["Intellect"];
-        stamina = playerJson["Stamina"];
-        lucky = playerJson["Lucky"];
-        freeStatsPoints = playerJson["FreeStatsPoints"];
-        goldCount = playerJson["Gold"];
-        currentExp = playerJson["CurrentExp"];
-        expToLevelUp = playerJson["ExpToUp"];
-        locationLevel = playerJson["LocationLevel"];
-        CalculateAllStats();
+        if (File.Exists(path) == true)
+        {
+            string jsonString = File.ReadAllText(path);
+            JSONObject playerJson = (JSONObject)JSON.Parse(jsonString);
+            playerLavel = playerJson["Level"];
+            strength = playerJson["Strength"];
+            intellect = playerJson["Intellect"];
+            stamina = playerJson["Stamina"];
+            lucky = playerJson["Lucky"];
+            freeStatsPoints = playerJson["FreeStatsPoints"];
+            goldCount = playerJson["Gold"];
+            currentExp = playerJson["CurrentExp"];
+            expToLevelUp = playerJson["ExpToUp"];
+            locationLevel = playerJson["LocationLevel"];
+            CalculateAllStats();
+        }        
     }
 }

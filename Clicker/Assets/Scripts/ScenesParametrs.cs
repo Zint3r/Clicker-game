@@ -1,4 +1,13 @@
-﻿public class ScenesParametrs
+﻿public static class ScenesParametrs
 {
-    public static int sceneLevel = 1;
+    public static int currentSceneLevel = 1;
+    private static int maxSceneLevel = 1;
+    public static void NextSceneLevel()
+    {
+        currentSceneLevel++;
+        if (currentSceneLevel > maxSceneLevel)
+        {
+            maxSceneLevel++;
+        }
+    }
 }
