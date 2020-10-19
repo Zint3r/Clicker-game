@@ -392,9 +392,9 @@ RectTransform:
   - {fileID: 1865977459}
   - {fileID: 1362677861}
   - {fileID: 81015136}
+  - {fileID: 1298637728}
   - {fileID: 1689506948}
   - {fileID: 771102574}
-  - {fileID: 1298637728}
   - {fileID: 61923867}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -507,12 +507,12 @@ GameObject:
   - component: {fileID: 81015138}
   - component: {fileID: 81015137}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Button save
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &81015136
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2236,7 +2236,7 @@ RectTransform:
   m_Children:
   - {fileID: 1025728571}
   m_Father: {fileID: 60914165}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3777,12 +3777,12 @@ GameObject:
   - component: {fileID: 1298637730}
   - component: {fileID: 1298637729}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Button load
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1298637728
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3796,7 +3796,7 @@ RectTransform:
   m_Children:
   - {fileID: 1982811870}
   m_Father: {fileID: 60914165}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -5134,7 +5134,7 @@ RectTransform:
   m_Children:
   - {fileID: 852535597}
   m_Father: {fileID: 60914165}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.057541683, y: 0.2452593}
   m_AnchorMax: {x: 0.94360423, y: 0.79644454}

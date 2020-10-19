@@ -112,7 +112,8 @@ public class PlayerControllerScript : MonoBehaviour
             if (moveTimer >= 6f && gameMain.CurrentEnemy == null)
             {
                 moveTimer = 0;
-                enemySpawn.EnemySpawn(gameMain.CurrentEmenyNumber, new Vector3(cam.transform.position.x, 0, 0));                
+                int randomNumber = Random.Range(0, links.EnemySpawn.EnemyPrefabs.Count);
+                enemySpawn.EnemySpawn(randomNumber, new Vector3(cam.transform.position.x, 0, 0));                
                 yield break;
             }
             else if (moveTimer >= 3f && gameMain.CurrentEnemy == null)

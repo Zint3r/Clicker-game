@@ -17,7 +17,7 @@ public class GameMainScript : MonoBehaviour
     }
     private void Start()
     {
-        allEnemyCount = links.EnemySpawn.EnemyPrefabs.Count;
+        allEnemyCount = ScenesParametrs.currentSceneLevel * 3 + 5;
     }
     private void OnEnable()
     {
