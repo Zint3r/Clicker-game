@@ -3276,7 +3276,7 @@ RectTransform:
   m_Children:
   - {fileID: 1822573309}
   m_Father: {fileID: 1824506842}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3863,7 +3863,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fabe48fee1620024dad0b6711f9b81b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelText: {fileID: 0}
+  levelText: {fileID: 1822573310}
+  healthText: {fileID: 612058318}
+  manaText: {fileID: 943702128}
+  damageText: {fileID: 1569675733}
+  spellText: {fileID: 1317637407}
+  expText: {fileID: 536369803}
+  strengthText: {fileID: 2115884560}
+  intellectText: {fileID: 1927326131}
+  staminaText: {fileID: 1851632636}
+  luckyText: {fileID: 21064256}
+  pointsText: {fileID: 42678624}
 --- !u!1 &872710428
 GameObject:
   m_ObjectHideFlags: 0
@@ -4101,7 +4111,7 @@ GameObject:
   - component: {fileID: 885142423}
   - component: {fileID: 885142422}
   m_Layer: 5
-  m_Name: Name Panel
+  m_Name: SpellPower Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4120,7 +4130,7 @@ RectTransform:
   m_Children:
   - {fileID: 1317637406}
   m_Father: {fileID: 1824506842}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4440,7 +4450,7 @@ RectTransform:
   m_Children:
   - {fileID: 943702127}
   m_Father: {fileID: 1824506842}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6292,7 +6302,7 @@ GameObject:
   - component: {fileID: 1317637408}
   - component: {fileID: 1317637407}
   m_Layer: 5
-  m_Name: Name Text
+  m_Name: Spell Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6349,7 +6359,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Name: Dominus'
+  m_Text: 'Spell: 20-32'
 --- !u!222 &1317637408
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8158,7 +8168,7 @@ RectTransform:
   m_Children:
   - {fileID: 1569675732}
   m_Father: {fileID: 1824506842}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8310,11 +8320,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 885142421}
   - {fileID: 722652149}
   - {fileID: 2119057820}
   - {fileID: 923888717}
   - {fileID: 1819165971}
+  - {fileID: 885142421}
   - {fileID: 360632342}
   m_Father: {fileID: 1030968085}
   m_RootOrder: 1
@@ -9473,7 +9483,7 @@ RectTransform:
   m_Children:
   - {fileID: 612058317}
   m_Father: {fileID: 1824506842}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

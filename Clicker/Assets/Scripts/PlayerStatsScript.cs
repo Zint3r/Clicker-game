@@ -28,7 +28,7 @@ public class PlayerStatsScript : MonoBehaviour
     private bool currentHit = false;
     public int Strength { get => strength; }
     public int Intellect { get => intellect; }
-    public int StartStamina { get => stamina; }
+    public int Stamina { get => stamina; }
     public int Lucky { get => lucky; }
     public int FreeStatsPoints { get => freeStatsPoints; set => freeStatsPoints = value; }
     public int ExpToLevelUp { get => expToLevelUp; }
@@ -45,6 +45,9 @@ public class PlayerStatsScript : MonoBehaviour
     public int LocationLevel { get => locationLevel; }
     public int SpellDamage { get => spellDamage; set => spellDamage = value; }
     public int BuffDamage { get => buffDamage; set => buffDamage = value; }
+    public int PlayerLavel { get => playerLavel; }
+    public int MinDamage { get => minDamage; set => minDamage = value; }
+    public int MaxDamage { get => maxDamage; set => maxDamage = value; }
 
     private void Awake()
     {
@@ -149,7 +152,7 @@ public class PlayerStatsScript : MonoBehaviour
     }
     public int BuffPower()
     {
-        return playerLavel + intellect;
+        return PlayerLavel + intellect;
     }
     public void BuffDamageCalculate(int damage)
     {
@@ -166,11 +169,11 @@ public class PlayerStatsScript : MonoBehaviour
     }
     private void CalculateHp()
     {
-        maxPlayerHp = 30 + stamina * 15 + playerLavel * 10;
+        maxPlayerHp = 30 + stamina * 15 + PlayerLavel * 10;
     }
     private void CalculateMp()
     {
-        maxPlayerMp = 10 + intellect * 5 + playerLavel * 2;
+        maxPlayerMp = 10 + intellect * 5 + PlayerLavel * 2;
     }
     private void CalculateDamage()
     {
@@ -259,7 +262,7 @@ public class PlayerStatsScript : MonoBehaviour
     public void SavePlayerStats()
     {
         JSONObject playerJson = new JSONObject();
-        playerJson.Add("Level", playerLavel);
+        playerJson.Add("Level", PlayerLavel);
         playerJson.Add("Strength", strength);
         playerJson.Add("Intellect", intellect);
         playerJson.Add("Stamina", stamina);
