@@ -9,6 +9,7 @@ public class InventoryUiScript : MonoBehaviour
     [SerializeField] private Text manaText = null;
     [SerializeField] private Text damageText = null;
     [SerializeField] private Text spellText = null;
+    [SerializeField] private Text critChanceText = null;
     [SerializeField] private Text expText = null;
     [Header("Stats point")]
     [SerializeField] private Text strengthText = null;
@@ -23,27 +24,31 @@ public class InventoryUiScript : MonoBehaviour
     }    
     public void ChangeLevelText()
     {
-        levelText.text = "Level: " + playerStats.PlayerLavel.ToString();
+        levelText.text = " Level: " + playerStats.PlayerLavel.ToString();
     }
     public void ChangeHealthText()
     {
-        healthText.text = "Health: " + playerStats.MaxPlayerHp.ToString();
+        healthText.text = " Health: " + playerStats.MaxPlayerHp.ToString();
     }
     public void ChangeManaText()
     {
-        manaText.text = "Mana: " + playerStats.MaxPlayerMp.ToString();
+        manaText.text = " Mana: " + playerStats.MaxPlayerMp.ToString();
     }
     public void ChangeDamageText()
     {
-        damageText.text = "Damage: " + playerStats.MinDamage.ToString() + " - " + playerStats.MaxDamage.ToString();
+        damageText.text = " Damage: " + playerStats.MinDamage.ToString() + " - " + playerStats.MaxDamage.ToString();
     }
     public void ChangeSpellText()
     {
-        spellText.text = "Spell: " + playerStats.SpellDamage.ToString();
+        spellText.text = " Spell: " + playerStats.SpellDamage.ToString();
+    }
+    public void ChangeCritChanceText()
+    {
+        critChanceText.text = " Crit chance: " + playerStats.CriticalChance.ToString() + " %";
     }
     public void ChangeExpText()
     {
-        expText.text = "Exp: " + playerStats.CurrentExp.ToString() + " / " + playerStats.ExpToLevelUp.ToString();
+        expText.text = " Exp: " + playerStats.CurrentExp.ToString() + " / " + playerStats.ExpToLevelUp.ToString();
     }
     public void ChangeStrengthText()
     {
@@ -72,6 +77,7 @@ public class InventoryUiScript : MonoBehaviour
         ChangeManaText();
         ChangeDamageText();
         ChangeSpellText();
+        ChangeCritChanceText();
         ChangeExpText();
         ChangeStrengthText();
         ChangeIntellectText();
