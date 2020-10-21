@@ -11,6 +11,7 @@ public class InventoryUiScript : MonoBehaviour
     [SerializeField] private Text spellText = null;
     [SerializeField] private Text critChanceText = null;
     [SerializeField] private Text expText = null;
+    [SerializeField] private Text goldCountText = null;
     [Header("Stats point")]
     [SerializeField] private Text strengthText = null;
     [SerializeField] private Text intellectText = null;
@@ -21,7 +22,12 @@ public class InventoryUiScript : MonoBehaviour
     {
         playerStats = GetComponent<PlayerStatsScript>();
         ChangeAllText();
-    }    
+        ChangeGoldText();
+    }
+    public void ChangeGoldText()
+    {
+        goldCountText.text = playerStats.GoldCount.ToString();
+    }
     public void ChangeLevelText()
     {
         levelText.text = " Level: " + playerStats.PlayerLavel.ToString();

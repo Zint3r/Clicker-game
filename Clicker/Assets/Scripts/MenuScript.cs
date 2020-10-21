@@ -2,7 +2,7 @@
 using UnityEngine.SceneManagement;
 public class MenuScript : MonoBehaviour
 {
-    public void NewGame()
+    public void LoadTownScene()
     {
         SceneManager.LoadScene(1);
     }
@@ -10,8 +10,12 @@ public class MenuScript : MonoBehaviour
     {
         Application.Quit();
     }
-    public void NextLevelLocation()
+    public void LoadLocationScene()
     {
         SceneManager.LoadScene(2);
+    }
+    public void LoadMenuScene()
+    {
+        SceneManager.LoadScene(0);
     }
 }

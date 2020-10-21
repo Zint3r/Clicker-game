@@ -4,17 +4,18 @@ using System.IO;
 public class PlayerStatsScript : MonoBehaviour
 {
     private string path = null;
-    [SerializeField] private int strength = 1;
-    [SerializeField] private int intellect = 1;
-    [SerializeField] private int stamina = 1;
-    [SerializeField] private int lucky = 1;
-    [SerializeField] private int freeStatsPoints = 5;
+    //Base stats
+    private int strength = 1;
+    private int intellect = 1;
+    private int stamina = 1;
+    private int lucky = 1;
+    private int freeStatsPoints = 5;
     private int playerLavel = 1;
+    //Second stats
     private int maxPlayerHp;
     private int currentPlayerHp;
     private int maxPlayerMp;
-    private int currentPlayerMp;
-    private int armor;
+    private int currentPlayerMp;    
     private int minDamage;
     private int maxDamage;
     private int weaponDamage;
@@ -22,10 +23,13 @@ public class PlayerStatsScript : MonoBehaviour
     private int spellDamage;
     private int criticalChance;
     private int expToLevelUp = 200;
-    private int currentExp = 0;
-    private int goldCount;
+    private int currentExp = 0;    
     private int locationLevel = 1;
     private bool currentHit = false;
+    //Inventory
+    private int goldCount;
+    private int armor;
+    //---------------------------------------
     public int Strength { get => strength; }
     public int Intellect { get => intellect; }
     public int Stamina { get => stamina; }
