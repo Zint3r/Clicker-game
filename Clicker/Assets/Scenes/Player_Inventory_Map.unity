@@ -656,6 +656,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1304787606}
+        m_MethodName: UpgradeWeapon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &146415903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1465,7 +1476,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 862306488}
-        m_MethodName: NextLevelLocation
+        m_MethodName: LoadLocationScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 862306485}
+        m_MethodName: SavePlayerStats
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2274,14 +2296,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 514874096}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 233c5a97f7023914787d3ad8b541a0a1, type: 3}
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameMain: {fileID: 0}
-  playerController: {fileID: 0}
-  playerStats: {fileID: 0}
-  playerUi: {fileID: 0}
-  enemySpawn: {fileID: 0}
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &536369801
 GameObject:
   m_ObjectHideFlags: 0
@@ -3479,11 +3515,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 296387f9805377545b41229645e4a6a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strength: 1
-  intellect: 1
-  stamina: 1
-  lucky: 1
-  freeStatsPoints: 5
 --- !u!4 &862306486
 Transform:
   m_ObjectHideFlags: 0
@@ -3523,6 +3554,10 @@ MonoBehaviour:
   staminaText: {fileID: 1851632636}
   luckyText: {fileID: 21064256}
   pointsText: {fileID: 42678624}
+  helmSlot: {fileID: 1126539127}
+  bodyArmorSlot: {fileID: 952771500}
+  shieldSlot: {fileID: 2062822769}
+  weaponSlot: {fileID: 1304787606}
 --- !u!114 &862306488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4027,6 +4062,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 862306487}
         m_MethodName: ChangeGoldText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 952771500}
+        m_MethodName: UpgradeBodyArmor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4625,15 +4671,19 @@ MonoBehaviour:
   priceText: {fileID: 1386864958}
   upgradeImages:
   - {fileID: -8216555744186139362, guid: 26035c518f0eb0a43b675e499ac443b6, type: 3}
+  - {fileID: -8216555744186139362, guid: 26035c518f0eb0a43b675e499ac443b6, type: 3}
   - {fileID: -8039230645592009848, guid: 26035c518f0eb0a43b675e499ac443b6, type: 3}
   - {fileID: -8040975341734295284, guid: 26035c518f0eb0a43b675e499ac443b6, type: 3}
   - {fileID: -2854026734004188039, guid: 26035c518f0eb0a43b675e499ac443b6, type: 3}
   upgradeBonusTexts:
+  - Buy Body Armor
   - Add armor +2, Add stamina +1
   - Add armor +5, Add stamina +1
   - Add armor +11, Add stamina +2
   - Add armor +18, Add stamina +2
-  upgradePrices: 2c010000200300009808000088130000
+  upgradePrices: 2c0100002003000098080000100e000088130000
+  upgradeArmorBonus: 0000000002000000050000000b00000012000000
+  upgradeWeaponBonus: 0000000000000000000000000000000000000000
 --- !u!114 &952771501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5091,15 +5141,19 @@ MonoBehaviour:
   priceText: {fileID: 890277891}
   upgradeImages:
   - {fileID: -7780241456683193726, guid: 26035c518f0eb0a43b675e499ac443b6, type: 3}
+  - {fileID: -7780241456683193726, guid: 26035c518f0eb0a43b675e499ac443b6, type: 3}
   - {fileID: -7995318688141442611, guid: 26035c518f0eb0a43b675e499ac443b6, type: 3}
   - {fileID: -5524456820005558620, guid: 26035c518f0eb0a43b675e499ac443b6, type: 3}
   - {fileID: -7158299738454668654, guid: 26035c518f0eb0a43b675e499ac443b6, type: 3}
   upgradeBonusTexts:
+  - Buy Helm
   - Add armor +1, Add intellect +1
   - Add armor +3, Add intellect +1
   - Add armor +6, Add intellect +2
   - Add armor +10, Add intellect +2
-  upgradePrices: c800000058020000dc050000a00f0000
+  upgradePrices: c800000058020000dc050000c4090000a00f0000
+  upgradeArmorBonus: 000000000100000003000000060000000a000000
+  upgradeWeaponBonus: 0000000000000000000000000000000000000000
 --- !u!1 &1128827474
 GameObject:
   m_ObjectHideFlags: 0
@@ -5194,6 +5248,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 862306487}
         m_MethodName: ChangeGoldText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1126539127}
+        m_MethodName: UpgradeHelm
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6134,15 +6199,19 @@ MonoBehaviour:
   priceText: {fileID: 1538469529}
   upgradeImages:
   - {fileID: 253558339884029481, guid: 26035c518f0eb0a43b675e499ac443b6, type: 3}
+  - {fileID: 253558339884029481, guid: 26035c518f0eb0a43b675e499ac443b6, type: 3}
   - {fileID: 9018954278706175944, guid: 26035c518f0eb0a43b675e499ac443b6, type: 3}
   - {fileID: -1490900588136338186, guid: 26035c518f0eb0a43b675e499ac443b6, type: 3}
   - {fileID: -1707683556180149523, guid: 26035c518f0eb0a43b675e499ac443b6, type: 3}
   upgradeBonusTexts:
+  - Buy Weapon
   - Add damage +3, Add strength +1
   - Add damage +7, Add strength +1
   - Add damage +12, Add strength +2
   - Add damage +20, Add strength +2
-  upgradePrices: f4010000b0040000c4090000901a0000
+  upgradePrices: f4010000b0040000c409000094110000901a0000
+  upgradeArmorBonus: 0000000000000000000000000000000000000000
+  upgradeWeaponBonus: 0000000003000000070000000c00000014000000
 --- !u!114 &1304787607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8488,6 +8557,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2062822769}
+        m_MethodName: UpgradeShield
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2024991632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8740,15 +8820,19 @@ MonoBehaviour:
   priceText: {fileID: 2132148782}
   upgradeImages:
   - {fileID: 2319012865107512544, guid: 26035c518f0eb0a43b675e499ac443b6, type: 3}
+  - {fileID: 2319012865107512544, guid: 26035c518f0eb0a43b675e499ac443b6, type: 3}
   - {fileID: 5619250688753916378, guid: 26035c518f0eb0a43b675e499ac443b6, type: 3}
   - {fileID: -4907458559933644133, guid: 26035c518f0eb0a43b675e499ac443b6, type: 3}
   - {fileID: 3059999813534829, guid: 26035c518f0eb0a43b675e499ac443b6, type: 3}
   upgradeBonusTexts:
+  - Buy Shield
   - Add armor +2, Add lucky +1
   - Add armor +4, Add lucky +1
   - Add armor +6, Add lucky +2
   - Add armor +8, Add lucky +2
-  upgradePrices: 960000005e010000ee0200004c040000
+  upgradePrices: 960000005e010000ee0200004c040000dc050000
+  upgradeArmorBonus: 0000000002000000040000000600000008000000
+  upgradeWeaponBonus: 0000000000000000000000000000000000000000
 --- !u!114 &2062822770
 MonoBehaviour:
   m_ObjectHideFlags: 0

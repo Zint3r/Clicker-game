@@ -4,6 +4,7 @@ using System.IO;
 public class PlayerStatsScript : MonoBehaviour
 {
     private string path = null;
+    private int locationLevel = 1;
     //Base stats
     private int strength = 1;
     private int intellect = 1;
@@ -17,18 +18,21 @@ public class PlayerStatsScript : MonoBehaviour
     private int maxPlayerMp;
     private int currentPlayerMp;    
     private int minDamage;
-    private int maxDamage;
-    private int weaponDamage;
+    private int maxDamage;    
     private int buffDamage;
     private int spellDamage;
     private int criticalChance;
     private int expToLevelUp = 200;
     private int currentExp = 0;    
-    private int locationLevel = 1;
     private bool currentHit = false;
     //Inventory
     private int goldCount;
     private int armor;
+    private int weaponDamage;
+    private int helmItenLvl;
+    private int bodyArmorItemLvl;
+    private int shieldItemLvl;
+    private int weaponItemLvl;
     //---------------------------------------
     public int Strength { get => strength; }
     public int Intellect { get => intellect; }
@@ -43,8 +47,8 @@ public class PlayerStatsScript : MonoBehaviour
     public int CurrentPlayerMp { get => currentPlayerMp; }
     public int CriticalChance { get => criticalChance; }
     public bool CurrentHit { get => currentHit; }
-    public int WeaponDamage { get => weaponDamage; set => weaponDamage = value; }
-    public int Armor { get => armor; set => armor = value; }
+    public int WeaponDamage { get => weaponDamage; }
+    public int Armor { get => armor; }
     public int GoldCount { get => goldCount; set => goldCount = value; }
     public int LocationLevel { get => locationLevel; }
     public int SpellDamage { get => spellDamage; set => spellDamage = value; }
@@ -52,6 +56,10 @@ public class PlayerStatsScript : MonoBehaviour
     public int PlayerLavel { get => playerLavel; }
     public int MinDamage { get => minDamage; set => minDamage = value; }
     public int MaxDamage { get => maxDamage; set => maxDamage = value; }
+    public int HelmItenLvl { get => helmItenLvl; set => helmItenLvl = value; }
+    public int BodyArmorItemLvl { get => bodyArmorItemLvl; set => bodyArmorItemLvl = value; }
+    public int ShieldItemLvl { get => shieldItemLvl; set => shieldItemLvl = value; }
+    public int WeaponItemLvl { get => weaponItemLvl; set => weaponItemLvl = value; }
 
     private void Awake()
     {
@@ -171,6 +179,14 @@ public class PlayerStatsScript : MonoBehaviour
     {
         armor -= BuffPower();
     }
+    public void CalculateArmor(int addArmor)
+    {
+        armor += addArmor;
+    }
+    public void CalculateWeaponDamage(int addDamage)
+    {
+        weaponDamage += addDamage;
+    }
     private void CalculateHp()
     {
         maxPlayerHp = 30 + stamina * 15 + PlayerLavel * 10;
@@ -276,6 +292,10 @@ public class PlayerStatsScript : MonoBehaviour
         playerJson.Add("CurrentExp", currentExp);
         playerJson.Add("ExpToUp", expToLevelUp);
         playerJson.Add("LocationLevel", locationLevel);
+        playerJson.Add("HelmItenLvl", helmItenLvl);
+        playerJson.Add("BodyArmorItemLvl", bodyArmorItemLvl);
+        playerJson.Add("ShieldItemLvl", shieldItemLvl);
+        playerJson.Add("WeaponItemLvl", weaponItemLvl);
         File.WriteAllText(path, playerJson.ToString());
     }
     public void LoadPlayerStats()
@@ -294,6 +314,10 @@ public class PlayerStatsScript : MonoBehaviour
             currentExp = playerJson["CurrentExp"];
             expToLevelUp = playerJson["ExpToUp"];
             locationLevel = playerJson["LocationLevel"];
+            helmItenLvl = playerJson["HelmItenLvl"];
+            bodyArmorItemLvl = playerJson["BodyArmorItemLvl"];
+            shieldItemLvl = playerJson["ShieldItemLvl"];
+            weaponItemLvl = playerJson["WeaponItemLvl"];
             CalculateAllStats();
         }        
     }

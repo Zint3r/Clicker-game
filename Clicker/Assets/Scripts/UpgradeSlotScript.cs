@@ -11,6 +11,8 @@ public class UpgradeSlotScript : MonoBehaviour
     [SerializeField] private Sprite[] upgradeImages = null;
     [TextArea(2, 5), SerializeField] private string[] upgradeBonusTexts = null;    
     [SerializeField] private int[] upgradePrices = null;
+    [SerializeField] private int[] upgradeArmorBonus = null;
+    [SerializeField] private int[] upgradeWeaponBonus = null;
     private int currentUpgradeLvl = 0;
     private PlayerStatsScript playerStats = null;
     void Start()
@@ -18,20 +20,50 @@ public class UpgradeSlotScript : MonoBehaviour
         playerStats = FindObjectOfType<PlayerStatsScript>();
         ViewUpgradeParametrs();
     }
+    public void SetUpgradeLvl(int lvl)
+    {
+        currentUpgradeLvl = lvl;
+    }
     public void ViewUpgradeParametrs()
     {
         itemImage.sprite = upgradeImages[currentUpgradeLvl];
-        lvlText.text = (currentUpgradeLvl + 1).ToString();
         bonusText.text = upgradeBonusTexts[currentUpgradeLvl];
         priceText.text = upgradePrices[currentUpgradeLvl].ToString();
+        if (currentUpgradeLvl > 0)
+        {
+            lvlText.enabled = true;
+            lvlText.text = currentUpgradeLvl.ToString();
+        }
+        else
+        {
+            lvlText.enabled = false;
+        }        
     }
     public void Upgrades()
     {
-        if (playerStats.GoldCount >= upgradePrices[currentUpgradeLvl])
+        if (playerStats.GoldCount >= upgradePrices[currentUpgradeLvl] && currentUpgradeLvl < upgradeBonusTexts.Length)
         {
             playerStats.GoldCount -= upgradePrices[currentUpgradeLvl];
             currentUpgradeLvl++;
+            playerStats.CalculateArmor(upgradeArmorBonus[currentUpgradeLvl] - upgradeArmorBonus[currentUpgradeLvl - 1]);
+            playerStats.CalculateWeaponDamage(upgradeWeaponBonus[currentUpgradeLvl] - upgradeWeaponBonus[currentUpgradeLvl - 1]);
             ViewUpgradeParametrs();            
         }
+    }
+    public void UpgradeHelm()
+    {
+        playerStats.HelmItenLvl = currentUpgradeLvl;
+    }
+    public void UpgradeBodyArmor()
+    {
+        playerStats.BodyArmorItemLvl = currentUpgradeLvl;
+    }
+    public void UpgradeShield()
+    {
+        playerStats.ShieldItemLvl = currentUpgradeLvl;
+    }
+    public void UpgradeWeapon()
+    {
+        playerStats.WeaponItemLvl = currentUpgradeLvl;
     }
 }

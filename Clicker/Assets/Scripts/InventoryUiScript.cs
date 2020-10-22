@@ -18,11 +18,24 @@ public class InventoryUiScript : MonoBehaviour
     [SerializeField] private Text staminaText = null;
     [SerializeField] private Text luckyText = null;
     [SerializeField] private Text pointsText = null;
+    [Header("Invetory")]
+    [SerializeField] private UpgradeSlotScript helmSlot = null;
+    [SerializeField] private UpgradeSlotScript bodyArmorSlot = null;
+    [SerializeField] private UpgradeSlotScript shieldSlot = null;
+    [SerializeField] private UpgradeSlotScript weaponSlot = null;
     void Start()
     {
         playerStats = GetComponent<PlayerStatsScript>();
         ChangeAllText();
         ChangeGoldText();
+        ChangeItemSlots();
+    }
+    public void ChangeItemSlots()
+    {
+        helmSlot.SetUpgradeLvl(playerStats.HelmItenLvl);
+        bodyArmorSlot.SetUpgradeLvl(playerStats.BodyArmorItemLvl);
+        shieldSlot.SetUpgradeLvl(playerStats.ShieldItemLvl);
+        weaponSlot.SetUpgradeLvl(playerStats.WeaponItemLvl);
     }
     public void ChangeGoldText()
     {
