@@ -33,6 +33,10 @@ public class PlayerStatsScript : MonoBehaviour
     private int bodyArmorItemLvl;
     private int shieldItemLvl;
     private int weaponItemLvl;
+    private int strengthBonus;
+    private int intellectBonus;
+    private int staminaBonus;
+    private int luckyBonus;
     //---------------------------------------
     public int Strength { get => strength; }
     public int Intellect { get => intellect; }
@@ -72,6 +76,21 @@ public class PlayerStatsScript : MonoBehaviour
     public void UpLocationLevel()
     {
         ScenesParametrs.NextSceneLevel();
+    }
+    public int ApplyItemBonus(int itemLvl)
+    {
+        if (itemLvl < 3 && itemLvl > 0)
+        {
+            return 1;            
+        }
+        else if (itemLvl >= 3 && itemLvl > 0)
+        {
+            return 2;
+        }
+        else
+        {
+            return 0;
+        }
     }
     public int PlayerMiddleDamage()
     {
@@ -187,34 +206,42 @@ public class PlayerStatsScript : MonoBehaviour
     {
         weaponDamage += addDamage;
     }
+    public void CalculateItemsBonus()
+    {
+        strengthBonus = ApplyItemBonus(weaponItemLvl);
+        intellectBonus = ApplyItemBonus(helmItenLvl);
+        staminaBonus = ApplyItemBonus(bodyArmorItemLvl);
+        luckyBonus = ApplyItemBonus(shieldItemLvl);
+    }
     private void CalculateHp()
     {
-        maxPlayerHp = 30 + stamina * 15 + PlayerLavel * 10;
+        maxPlayerHp = 30 + (stamina + staminaBonus) * 15 + PlayerLavel * 10;
     }
     private void CalculateMp()
     {
-        maxPlayerMp = 10 + intellect * 5 + PlayerLavel * 2;
+        maxPlayerMp = 10 + (intellect + intellectBonus) * 5 + PlayerLavel * 2;
     }
     private void CalculateDamage()
     {
-        minDamage = 5 + weaponDamage + buffDamage + strength * 2;
-        maxDamage = 10 + weaponDamage + buffDamage + strength * 2;
+        minDamage = 5 + weaponDamage + buffDamage + (strength + strengthBonus) * 2;
+        maxDamage = 10 + weaponDamage + buffDamage + (strength + strengthBonus) * 2;
     }
     private void CalculateSpellDamage()
     {
-        spellDamage = 5 + intellect * 4;
+        spellDamage = 5 + (intellect + intellectBonus) * 4;
     }
     private void CalculateCriticalChance()
     {
-        criticalChance = 5 + lucky * 3;
+        criticalChance = 5 + (lucky + luckyBonus) * 3;
     }
     private void CalculateAllStats()
     {
+        CalculateItemsBonus();
         CalculateHp();
         CalculateMp();
         CalculateDamage();
         CalculateSpellDamage();
-        CalculateCriticalChance();
+        CalculateCriticalChance();                
     }
     private bool CheckCriticalStrike()
     {
@@ -242,26 +269,26 @@ public class PlayerStatsScript : MonoBehaviour
         switch (number)
         {
             case 1:
-                strength += StatsCheckAndUp(strength);
+                strength += StatsCheckAndUp(strength, strengthBonus);
                 CalculateDamage();
                 break;
             case 2:
-                intellect += StatsCheckAndUp(intellect);
+                intellect += StatsCheckAndUp(intellect, intellectBonus);
                 CalculateMp();
                 break;
             case 3:
-                stamina += StatsCheckAndUp(stamina);
+                stamina += StatsCheckAndUp(stamina, staminaBonus);
                 CalculateHp();
                 break;
             case 4:
-                lucky += StatsCheckAndUp(lucky);
+                lucky += StatsCheckAndUp(lucky, luckyBonus);
                 CalculateCriticalChance();
                 break;            
         }
     }
-    private int StatsCheckAndUp(int stat)
+    private int StatsCheckAndUp(int stat, int bonus)
     {
-        if (freeStatsPoints > 0 && stat < 10)
+        if (freeStatsPoints > 0 && stat < 10 + bonus)
         {            
             freeStatsPoints--;
             return 1;

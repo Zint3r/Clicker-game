@@ -53,17 +53,21 @@ public class UpgradeSlotScript : MonoBehaviour
     public void UpgradeHelm()
     {
         playerStats.HelmItenLvl = currentUpgradeLvl;
+        playerStats.CalculateItemsBonus();
     }
     public void UpgradeBodyArmor()
     {
         playerStats.BodyArmorItemLvl = currentUpgradeLvl;
+        playerStats.CalculateItemsBonus();
     }
     public void UpgradeShield()
     {
         playerStats.ShieldItemLvl = currentUpgradeLvl;
+        playerStats.CalculateItemsBonus();
     }
     public void UpgradeWeapon()
     {
         playerStats.WeaponItemLvl = currentUpgradeLvl;
+        playerStats.CalculateItemsBonus();
     }
 }
