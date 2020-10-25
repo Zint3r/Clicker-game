@@ -346,6 +346,11 @@ public class PlayerStatsScript : MonoBehaviour
             shieldItemLvl = playerJson["ShieldItemLvl"];
             weaponItemLvl = playerJson["WeaponItemLvl"];
             CalculateAllStats();
-        }        
+        }
+        else
+        {
+            CalculateAllStats();
+            SavePlayerStats();            
+        }
     }
 }
