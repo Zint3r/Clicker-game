@@ -20,6 +20,7 @@ public class PlayerUiScript : MonoBehaviour
     [SerializeField] private GameObject deadPanel = null;
     [SerializeField] private Text deadGoldCountText = null;
     [SerializeField] private Image[] spellMultiImg = null;
+    [SerializeField] private GameObject menuPanel = null;
     private PlayerControllerScript playerController = null;
     private GameMainScript gameMain = null;
     private float maxDuration = 0;
@@ -48,15 +49,29 @@ public class PlayerUiScript : MonoBehaviour
     {
         playerClickController.OnClick -= OnClickDefenseButton;
     }
+    public void MenuEnable()
+    {
+        menuPanel.SetActive(true);
+        Time.timeScale = 0;
+    }
+    public void MenuDisable()
+    {
+        menuPanel.SetActive(false);
+        Time.timeScale = 1;
+    }
     public void FinishGame()
     {
         winPanel.SetActive(true);
-        winGoldCountText.text = "Gold " + links.PlayerStats.GoldCount.ToString();        
+        winGoldCountText.text = "Gold " + links.PlayerStats.GoldCount.ToString();
+        links.PlayerStats.BuffDamageCalculate(0);
+        links.PlayerStats.DownBuffArmor();
     }
     public void GameOver()
     {
         deadPanel.SetActive(true);
-        deadGoldCountText.text = "Gold " + links.PlayerStats.GoldCount.ToString();        
+        deadGoldCountText.text = "Gold " + links.PlayerStats.GoldCount.ToString();
+        links.PlayerStats.BuffDamageCalculate(0);
+        links.PlayerStats.DownBuffArmor();
     }
     public void ChangeHpUi(int currentHp, int maxHp)
     {
