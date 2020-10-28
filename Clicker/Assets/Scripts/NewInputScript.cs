@@ -39,7 +39,7 @@ public class @NewInputScript : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""edd32b00-b7fc-4b96-976e-f92e06ff5f43"",
-                    ""path"": ""<Mouse>/leftButton"",
+                    ""path"": ""<Touchscreen>/primaryTouch/tap"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Mobile"",

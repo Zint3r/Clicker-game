@@ -67,7 +67,7 @@ public class PlayerStatsScript : MonoBehaviour
 
     private void Awake()
     {
-        path = Application.dataPath + "/Save.json";
+        path = Path.Combine(Application.persistentDataPath, "Save.json");
         LoadPlayerStats();
         locationLevel = ScenesParametrs.currentSceneLevel;
         currentPlayerHp = maxPlayerHp;

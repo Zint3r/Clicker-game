@@ -21,6 +21,7 @@ public class PlayerUiScript : MonoBehaviour
     [SerializeField] private Text deadGoldCountText = null;
     [SerializeField] private Image[] spellMultiImg = null;
     [SerializeField] private GameObject menuPanel = null;
+    [SerializeField] private GameObject menuButton = null;
     private PlayerControllerScript playerController = null;
     private GameMainScript gameMain = null;
     private float maxDuration = 0;
@@ -61,6 +62,7 @@ public class PlayerUiScript : MonoBehaviour
     }
     public void FinishGame()
     {
+        menuButton.SetActive(false);
         winPanel.SetActive(true);
         winGoldCountText.text = "Gold " + links.PlayerStats.GoldCount.ToString();
         links.PlayerStats.BuffDamageCalculate(0);
@@ -68,6 +70,7 @@ public class PlayerUiScript : MonoBehaviour
     }
     public void GameOver()
     {
+        menuButton.SetActive(false);
         deadPanel.SetActive(true);
         deadGoldCountText.text = "Gold " + links.PlayerStats.GoldCount.ToString();
         links.PlayerStats.BuffDamageCalculate(0);

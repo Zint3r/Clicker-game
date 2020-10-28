@@ -8,7 +8,7 @@ public class CheckSlotScript : MonoBehaviour
     [SerializeField] private Image slotImage = null;
     void Start()
     {
-        path = Application.dataPath + "/Save.json";
+        path = Path.Combine(Application.persistentDataPath, "Save.json");
         CheckHeroesSlots();
     }
     private void CheckHeroesSlots()
