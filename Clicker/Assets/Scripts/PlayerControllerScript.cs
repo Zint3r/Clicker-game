@@ -157,7 +157,7 @@ public class PlayerControllerScript : MonoBehaviour
         {
             Destroy(gameMain.CurrentEnemy.gameObject, 3f);
             links.PlayerStats.ReceivingExp(33);
-            links.PlayerStats.ReceivingGold(Random.Range(2 * gameMain.CurrentEnemy.EnemyLevel, 4 * gameMain.CurrentEnemy.EnemyLevel));
+            links.PlayerStats.ReceivingGold(Random.Range(7 * gameMain.CurrentEnemy.EnemyLevel, 9 * gameMain.CurrentEnemy.EnemyLevel));
             playerUi.ChangeExpUi(links.PlayerStats.CurrentExp, links.PlayerStats.ExpToLevelUp);
             NextEnemy();
         }                    

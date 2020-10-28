@@ -8,17 +8,15 @@ public class GameMainScript : MonoBehaviour
     private int currentEmenyNumber = 1;
     private EnemyScript currentEnemy = null;
     public int CurrentEmenyNumber { get => currentEmenyNumber; set => currentEmenyNumber = value; }
-    public EnemyScript CurrentEnemy { get => currentEnemy; }    
+    public EnemyScript CurrentEnemy { get => currentEnemy; }
+    public int AllEnemyCount { get => allEnemyCount; }
     private void Awake()
     {
         links = GetComponent<LinksScript>();
         input = new NewInputScript();        
-        input.Player.Click.performed += function => OnPlayerClick();        
-    }
-    private void Start()
-    {
+        input.Player.Click.performed += function => OnPlayerClick();
         allEnemyCount = ScenesParametrs.currentSceneLevel * 3 + 5;
-    }
+    }    
     private void OnEnable()
     {
         input.Enable();

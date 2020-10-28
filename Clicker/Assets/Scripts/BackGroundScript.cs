@@ -10,14 +10,14 @@ public class BackGroundScript : MonoBehaviour
     void Start()
     {
         links = FindObjectOfType<LinksScript>();
-        count = links.EnemySpawn.EnemyPrefabs.Count;
+        count = links.GameMain.AllEnemyCount;
         backGroundsPositions = new GameObject[count];
         xPos = backGround.GetComponent<SpriteRenderer>().sprite.texture.width / 100f;        
         InstantiateBackGrounds();
     }
     private void InstantiateBackGrounds()
     {
-        for (int i = 0; i < count - 1; i++)
+        for (int i = 0; i < count; i++)
         {
             GameObject newObj = Instantiate(backGround, gameObject.transform);
             newObj.transform.position += new Vector3(xPos * i, 0, 0);
