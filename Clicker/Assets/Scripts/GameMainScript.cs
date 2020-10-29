@@ -5,7 +5,7 @@ public class GameMainScript : MonoBehaviour
     private float cooldownAttack = 1f;
     private int allEnemyCount = 0;
     private NewInputScript input = null;
-    private int currentEmenyNumber = 1;
+    private int currentEmenyNumber = 0;
     private EnemyScript currentEnemy = null;
     public int CurrentEmenyNumber { get => currentEmenyNumber; set => currentEmenyNumber = value; }
     public EnemyScript CurrentEnemy { get => currentEnemy; }
@@ -64,7 +64,7 @@ public class GameMainScript : MonoBehaviour
     }
     public bool EndGameCheck()
     {
-        if (allEnemyCount - 1 == currentEmenyNumber)
+        if (allEnemyCount == currentEmenyNumber)
         {            
             return true;
         }
