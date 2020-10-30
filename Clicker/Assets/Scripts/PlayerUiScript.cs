@@ -64,7 +64,7 @@ public class PlayerUiScript : MonoBehaviour
     {
         menuButton.SetActive(false);
         winPanel.SetActive(true);
-        winGoldCountText.text = "Gold " + links.PlayerStats.GoldCount.ToString();
+        winGoldCountText.text = "Gold " + links.PlayerStats.GoldOnCurrentLevel.ToString();
         links.PlayerStats.BuffDamageCalculate(0);
         links.PlayerStats.DownBuffArmor();
     }
@@ -72,7 +72,7 @@ public class PlayerUiScript : MonoBehaviour
     {
         menuButton.SetActive(false);
         deadPanel.SetActive(true);
-        deadGoldCountText.text = "Gold " + links.PlayerStats.GoldCount.ToString();
+        deadGoldCountText.text = "Gold " + links.PlayerStats.GoldOnCurrentLevel.ToString();
         links.PlayerStats.BuffDamageCalculate(0);
         links.PlayerStats.DownBuffArmor();
     }

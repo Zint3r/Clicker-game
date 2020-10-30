@@ -27,6 +27,7 @@ public class PlayerStatsScript : MonoBehaviour
     private bool currentHit = false;
     //Inventory
     private int goldCount;
+    private int goldOnCurrentLevel;
     private int armor;
     private int weaponDamage;
     private int helmItenLvl;
@@ -64,6 +65,7 @@ public class PlayerStatsScript : MonoBehaviour
     public int BodyArmorItemLvl { get => bodyArmorItemLvl; set => bodyArmorItemLvl = value; }
     public int ShieldItemLvl { get => shieldItemLvl; set => shieldItemLvl = value; }
     public int WeaponItemLvl { get => weaponItemLvl; set => weaponItemLvl = value; }
+    public int GoldOnCurrentLevel { get => goldOnCurrentLevel; set => goldOnCurrentLevel = value; }
 
     private void Awake()
     {
@@ -180,6 +182,7 @@ public class PlayerStatsScript : MonoBehaviour
     public void ReceivingGold(int gold)
     {
         goldCount += gold;
+        goldOnCurrentLevel += gold;
     }
     public int BuffPower()
     {
