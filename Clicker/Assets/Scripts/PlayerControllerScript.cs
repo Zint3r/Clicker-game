@@ -19,7 +19,9 @@ public class PlayerControllerScript : MonoBehaviour
     private float currentContinuitySpellTimer = 0;
     private float currentBuffTimer = 0;
     private bool buffUp = false;
+    private bool isBackGroundMove = false;
     public bool Cooldown { set => cooldown = value; }
+    public bool IsBackGroundMove { get => isBackGroundMove; }
     private void Start()
     {
         cam = Camera.main;
@@ -102,6 +104,7 @@ public class PlayerControllerScript : MonoBehaviour
         else
         {
             nextPosition = backGround.BackGroundsPositions[links.GameMain.CurrentEmenyNumber].gameObject.transform.position;
+            isBackGroundMove = true;
             StartCoroutine(BackGroundMove());
         }
     }
@@ -113,7 +116,8 @@ public class PlayerControllerScript : MonoBehaviour
             {
                 moveTimer = 0;
                 int randomNumber = Random.Range(0, links.EnemySpawn.EnemyPrefabs.Count);
-                enemySpawn.EnemySpawn(randomNumber, new Vector3(cam.transform.position.x, 0, 0));                
+                enemySpawn.EnemySpawn(randomNumber, new Vector3(cam.transform.position.x, 0, 0));
+                isBackGroundMove = false;
                 yield break;
             }
             else if (moveTimer >= 3f && gameMain.CurrentEnemy == null)
@@ -156,8 +160,10 @@ public class PlayerControllerScript : MonoBehaviour
         if (gameMain.CurrentEnemy != null && gameMain.CurrentEnemy.EnemeDead())
         {
             Destroy(gameMain.CurrentEnemy.gameObject, 3f);
-            links.PlayerStats.ReceivingExp(33);
-            links.PlayerStats.ReceivingGold(Random.Range(7 * gameMain.CurrentEnemy.EnemyLevel, 9 * gameMain.CurrentEnemy.EnemyLevel));
+            int receivedExp = 22 * gameMain.CurrentEnemy.EnemyLevel * gameMain.CurrentEnemy.HardMod;
+            int receivedGold = Random.Range(7 * gameMain.CurrentEnemy.EnemyLevel, 9 * gameMain.CurrentEnemy.EnemyLevel) * gameMain.CurrentEnemy.HardMod;
+            links.PlayerStats.ReceivingExp(receivedExp);
+            links.PlayerStats.ReceivingGold(receivedGold);
             playerUi.ChangeExpUi(links.PlayerStats.CurrentExp, links.PlayerStats.ExpToLevelUp);
             NextEnemy();
         }                    

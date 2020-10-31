@@ -164,11 +164,11 @@ public class PlayerUiScript : MonoBehaviour
     }
     private void DefenseCooldown()
     {
-        if (gameMain.CurrentEnemy.IsEnemyAttack == true && blockPosible == true)
+        if (gameMain.CurrentEnemy.IsEnemyAttack == true && blockPosible == true && gameMain.CurrentEnemy != null)
         {
             defenseImg.enabled = true;
         }
-        else if (gameMain.CurrentEnemy.IsEnemyAttack == false)
+        else if (gameMain.CurrentEnemy.IsEnemyAttack == false || gameMain.CurrentEnemy == null)
         {            
             defenseImg.enabled = false;
             blockPosible = true;

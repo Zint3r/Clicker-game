@@ -17,6 +17,8 @@ public class EnemyScript : MonoBehaviour
     public EnemyUiScript EnemyUI { get => enemyUI; set => enemyUI = value; }    
     public bool IsEnemyAttack { get => isEnemyAttack; }
     public int EnemyLevel { get => enemyLevel; set => enemyLevel = value; }
+    public int HardMod { get => hardMod; }
+
     void Start()
     {
         EnemyStatsScale();
@@ -83,6 +85,7 @@ public class EnemyScript : MonoBehaviour
         {
             animator.SetBool("EnemyDead", true);
             enemyHP = 0;
+            isEnemyAttack = false;
             return true;
         }
         else

@@ -1,20 +1,28 @@
 ﻿using UnityEngine;
 public class ItemSpawnScript : MonoBehaviour
 {
+    private LinksScript links = null;
     [SerializeField] private RectTransform spawnPanel = null;
     [SerializeField] private GameObject[] chestObj = null;
     [SerializeField] private float timeTospawnChest = 30;
     private float currentTimer = 0;
+    private void Start()
+    {
+        links = GetComponent<LinksScript>();
+    }
     private void Update()
     {
-        TimeToSpawn(timeTospawnChest);
+        if (links.PlayerController.IsBackGroundMove == false)
+        {
+            TimeToSpawn(timeTospawnChest);
+        }        
     }   
     public void SpawnChest()
     {        
         GameObject obj = Instantiate(chestObj[RandomizeItem()]);
-        float posX = (Screen.width - spawnPanel.rect.width) / 50;
-        float posY = (Screen.height - spawnPanel.rect.height) / 150;
-        obj.transform.position += new Vector3(Random.Range(-posX, posX) + Camera.main.transform.position.x, Random.Range(-posY, posY) + Camera.main.transform.position.y, 0);       
+        float posX = spawnPanel.rect.width / 300;
+        float posY = spawnPanel.transform.position.y / 40;
+        obj.transform.position += new Vector3(Random.Range(-posX, posX) + Camera.main.transform.position.x, Camera.main.transform.position.y - posY, 0);       
     }
     private void TimeToSpawn(float timeToSpawn)
     {
