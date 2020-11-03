@@ -14,6 +14,11 @@ public class MenuScript : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
+    public void LoadLocationScene(int level)
+    {
+        ScenesParametrs.selectedLevelMap = level;
+        SceneManager.LoadScene(2);
+    }
     public void LoadMenuScene()
     {
         SceneManager.LoadScene(0);

@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4958,8 +4958,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0b7800cd861cdf4486b02addc3926be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backGround: {fileID: 2851702883212566341, guid: 659055b35f6f03e41a14438fc22e8e0b,
-    type: 3}
+  backGround:
+  - {fileID: 2851702883212566341, guid: 659055b35f6f03e41a14438fc22e8e0b, type: 3}
+  - {fileID: 2851702883212566341, guid: cb2b86ca7e5c6a14ba2866a51474defa, type: 3}
+  - {fileID: 2851702883212566341, guid: 306711fb34c404a4dab66429c146eca2, type: 3}
 --- !u!1 &1571952744
 GameObject:
   m_ObjectHideFlags: 0
