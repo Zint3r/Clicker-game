@@ -12,6 +12,7 @@ public class GameMainScript : MonoBehaviour
     public int AllEnemyCount { get => allEnemyCount; }
     private void Awake()
     {
+        Time.timeScale = 1;
         links = GetComponent<LinksScript>();
         input = new NewInputScript();        
         input.Player.Click.performed += function => OnPlayerClick();
