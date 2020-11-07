@@ -1,82 +1,79 @@
 fileFormatVersion: 2
-guid: 8d362aa8b4ced474f85dd91e358e195a
+guid: b78ccc7d972f3ca4eb78437f932abcaa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6019453725058403666
-    second: Zombie_0
+      213: 1798749017520043893
+    second: Dwarven Soldier_0
   - first:
-      213: -2485871483528494817
-    second: Zombie_1
+      213: 4434303183666284954
+    second: Dwarven Soldier_1
   - first:
-      213: 6284166523789267160
-    second: Zombie_2
+      213: 2548004527816354510
+    second: Dwarven Soldier_2
   - first:
-      213: -8585762769051335824
-    second: Zombie_3
+      213: 4634526423447886431
+    second: Dwarven Soldier_3
   - first:
-      213: -980516788960830398
-    second: Zombie_4
+      213: -164813109927888794
+    second: Dwarven Soldier_4
   - first:
-      213: 9211052458692073003
-    second: Zombie_5
+      213: -2274460016784153218
+    second: Dwarven Soldier_5
   - first:
-      213: -1977811604655986376
-    second: Zombie_6
+      213: 2745172703468383714
+    second: Dwarven Soldier_6
   - first:
-      213: 2485403828518691469
-    second: Zombie_7
+      213: 2312825479718107848
+    second: Dwarven Soldier_7
   - first:
-      213: 9155892958683192943
-    second: Zombie_8
+      213: -4650863318495669310
+    second: Dwarven Soldier_8
   - first:
-      213: -8024741306827218347
-    second: Zombie_9
+      213: 4882701415041748884
+    second: Dwarven Soldier_9
   - first:
-      213: -5531462376642689062
-    second: Zombie_10
+      213: -6635518042731159079
+    second: Dwarven Soldier_10
   - first:
-      213: 6692051171765633277
-    second: Zombie_11
+      213: -6900140494006570684
+    second: Dwarven Soldier_11
   - first:
-      213: -2109578579430464046
-    second: Zombie_12
+      213: -8038765969283717722
+    second: Dwarven Soldier_12
   - first:
-      213: 6164015348754923961
-    second: Zombie_13
+      213: -1680139954237967951
+    second: Dwarven Soldier_13
   - first:
-      213: 4370258187439953208
-    second: Zombie_14
+      213: 6794300177820296898
+    second: Dwarven Soldier_14
   - first:
-      213: 5539720855809112956
-    second: Zombie_15
+      213: -1207384021396208398
+    second: Dwarven Soldier_15
   - first:
-      213: 4907640470950064899
-    second: Zombie_16
+      213: -3821562670278454874
+    second: Dwarven Soldier_16
   - first:
-      213: 438821301969796976
-    second: Zombie_17
+      213: 7578480572043623334
+    second: Dwarven Soldier_17
   - first:
-      213: 1508698502848197310
-    second: Zombie_18
+      213: -6400196243600413182
+    second: Dwarven Soldier_18
   - first:
-      213: -7458044653692860388
-    second: Zombie_19
+      213: -6337184214974817320
+    second: Dwarven Soldier_19
   - first:
-      213: 1946134367612990539
-    second: Zombie_20
+      213: -2702296825040919895
+    second: Dwarven Soldier_20
   - first:
-      213: -3155575674940347712
-    second: Zombie_21
+      213: 3150953038119352926
+    second: Dwarven Soldier_21
   - first:
-      213: -3880134406884939305
-    second: Zombie_22
+      213: 5475227972803540015
+    second: Dwarven Soldier_22
   - first:
-      213: -2364802278190090090
-    second: Zombie_23
-  - first:
-      213: -3594733317246852506
-    second: Zombie_24
+      213: -4354672465827804934
+    second: Dwarven Soldier_23
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -198,526 +195,442 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Zombie_0
+      name: Dwarven Soldier_0
       rect:
         serializedVersion: 2
-        x: 33
-        y: 13
-        width: 131
+        x: 0
+        y: 0
+        width: 184
         height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25d02004545698350800000000000000
-      internalID: 6019453725058403666
+      spriteID: 5777d5583b076f810800000000000000
+      internalID: 1798749017520043893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_1
+      name: Dwarven Soldier_1
       rect:
         serializedVersion: 2
-        x: 180
-        y: 13
-        width: 113
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f11c2037e09608dd0800000000000000
-      internalID: -2485871483528494817
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zombie_2
-      rect:
-        serializedVersion: 2
-        x: 317
-        y: 11
-        width: 93
-        height: 248
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d05cdf8828d53750800000000000000
-      internalID: 6284166523789267160
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zombie_3
-      rect:
-        serializedVersion: 2
-        x: 453
-        y: 11
-        width: 82
-        height: 202
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 073cbe8304e39d880800000000000000
-      internalID: -8585762769051335824
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zombie_4
-      rect:
-        serializedVersion: 2
-        x: 562
-        y: 11
-        width: 128
-        height: 202
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 24cdea9ec218462f0800000000000000
-      internalID: -980516788960830398
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zombie_5
-      rect:
-        serializedVersion: 2
-        x: 731
-        y: 11
-        width: 100
-        height: 211
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2654dfa86b34df70800000000000000
-      internalID: 9211052458692073003
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zombie_6
-      rect:
-        serializedVersion: 2
-        x: 882
-        y: 11
-        width: 77
-        height: 216
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 839a5df03d66d84e0800000000000000
-      internalID: -1977811604655986376
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zombie_7
-      rect:
-        serializedVersion: 2
-        x: 999
-        y: 11
-        width: 88
-        height: 208
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d82a0422d9ded7220800000000000000
-      internalID: 2485403828518691469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zombie_8
-      rect:
-        serializedVersion: 2
-        x: 1121
-        y: 13
-        width: 87
-        height: 214
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f6edfcbc224401f70800000000000000
-      internalID: 9155892958683192943
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zombie_9
-      rect:
-        serializedVersion: 2
-        x: 1244
-        y: 13
-        width: 98
+        x: 233
+        y: 0
+        width: 184
         height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 552e8206c4462a090800000000000000
-      internalID: -8024741306827218347
+      spriteID: a9900d8604fc98d30800000000000000
+      internalID: 4434303183666284954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_10
+      name: Dwarven Soldier_2
       rect:
         serializedVersion: 2
-        x: 1372
-        y: 11
-        width: 107
-        height: 206
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad746cf764c4c33b0800000000000000
-      internalID: -5531462376642689062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zombie_11
-      rect:
-        serializedVersion: 2
-        x: 1513
-        y: 11
-        width: 96
-        height: 209
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df0c3dfa511fedc50800000000000000
-      internalID: 6692051171765633277
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zombie_12
-      rect:
-        serializedVersion: 2
-        x: 1630
-        y: 11
-        width: 93
-        height: 213
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d52643857549b2e0800000000000000
-      internalID: -2109578579430464046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zombie_13
-      rect:
-        serializedVersion: 2
-        x: 1750
-        y: 11
-        width: 91
-        height: 216
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9b1c7942d4bfa8550800000000000000
-      internalID: 6164015348754923961
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zombie_14
-      rect:
-        serializedVersion: 2
-        x: 1873
-        y: 13
-        width: 89
-        height: 209
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 835d917baa646ac30800000000000000
-      internalID: 4370258187439953208
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zombie_15
-      rect:
-        serializedVersion: 2
-        x: 2001
-        y: 11
-        width: 76
-        height: 221
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c7b335584ca01ec40800000000000000
-      internalID: 5539720855809112956
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zombie_16
-      rect:
-        serializedVersion: 2
-        x: 2133
-        y: 11
-        width: 79
+        x: 466
+        y: 0
+        width: 184
         height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3033f4ca1017b1440800000000000000
-      internalID: 4907640470950064899
+      spriteID: ecaa49e3e945c5320800000000000000
+      internalID: 2548004527816354510
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_17
+      name: Dwarven Soldier_3
       rect:
         serializedVersion: 2
-        x: 2251
-        y: 11
-        width: 169
-        height: 194
+        x: 632
+        y: 0
+        width: 184
+        height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07fb8cf26a1071600800000000000000
-      internalID: 438821301969796976
+      spriteID: f5ad5c33a35215040800000000000000
+      internalID: 4634526423447886431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_18
+      name: Dwarven Soldier_4
       rect:
         serializedVersion: 2
-        x: 2425
-        y: 13
-        width: 162
-        height: 142
+        x: 794
+        y: 0
+        width: 184
+        height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb23e6f7b49ffe410800000000000000
-      internalID: 1508698502848197310
+      spriteID: 668bb68895776bdf0800000000000000
+      internalID: -164813109927888794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_19
+      name: Dwarven Soldier_5
       rect:
         serializedVersion: 2
-        x: 2604
-        y: 15
-        width: 155
-        height: 104
+        x: 1104
+        y: 0
+        width: 184
+        height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c18c2a1e6e3bf7890800000000000000
-      internalID: -7458044653692860388
+      spriteID: e7560c35aae7f60e0800000000000000
+      internalID: -2274460016784153218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_20
+      name: Dwarven Soldier_6
       rect:
         serializedVersion: 2
-        x: 2713
-        y: 112
-        width: 48
-        height: 35
+        x: 1288
+        y: 0
+        width: 184
+        height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4470c275ee020b10800000000000000
-      internalID: 1946134367612990539
+      spriteID: 2ede45d7700d81620800000000000000
+      internalID: 2745172703468383714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_21
+      name: Dwarven Soldier_7
       rect:
         serializedVersion: 2
-        x: 2780
-        y: 11
-        width: 165
-        height: 95
+        x: 1472
+        y: 0
+        width: 184
+        height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ca215184a42534d0800000000000000
-      internalID: -3155575674940347712
+      spriteID: 8caf11a158ec81020800000000000000
+      internalID: 2312825479718107848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_22
+      name: Dwarven Soldier_8
       rect:
         serializedVersion: 2
-        x: 2968
-        y: 11
-        width: 186
-        height: 64
+        x: 1702
+        y: 0
+        width: 184
+        height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d92ad4905ef62ac0800000000000000
-      internalID: -3880134406884939305
+      spriteID: 2c3db220470d47fb0800000000000000
+      internalID: -4650863318495669310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_23
+      name: Dwarven Soldier_9
       rect:
         serializedVersion: 2
-        x: 3177
-        y: 11
-        width: 185
-        height: 72
+        x: 1899
+        y: 0
+        width: 184
+        height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 698f1747bd88e2fd0800000000000000
-      internalID: -2364802278190090090
+      spriteID: 49f4cdb3117d2c340800000000000000
+      internalID: 4882701415041748884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_24
+      name: Dwarven Soldier_10
       rect:
         serializedVersion: 2
-        x: 3383
-        y: 11
-        width: 190
-        height: 36
+        x: 2108
+        y: 0
+        width: 184
+        height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6626d3bf711fc1ec0800000000000000
-      internalID: -3594733317246852506
+      spriteID: 9d160522f77e9e3a0800000000000000
+      internalID: -6635518042731159079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dwarven Soldier_11
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 0
+        width: 184
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441337a77c6cd30a0800000000000000
+      internalID: -6900140494006570684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dwarven Soldier_12
+      rect:
+        serializedVersion: 2
+        x: 2721
+        y: 0
+        width: 184
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5685031f0907090800000000000000
+      internalID: -8038765969283717722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dwarven Soldier_14
+      rect:
+        serializedVersion: 2
+        x: 3140
+        y: 0
+        width: 184
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c62a5493043a4e50800000000000000
+      internalID: 6794300177820296898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dwarven Soldier_15
+      rect:
+        serializedVersion: 2
+        x: 3316
+        y: 0
+        width: 184
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4423921a28e3fe0800000000000000
+      internalID: -1207384021396208398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dwarven Soldier_18
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 0
+        width: 184
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e68671d6fed27a0800000000000000
+      internalID: -6400196243600413182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dwarven Soldier_19
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 0
+        width: 184
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db9636488ccd08a0800000000000000
+      internalID: -6337184214974817320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dwarven Soldier_20
+      rect:
+        serializedVersion: 2
+        x: 2954
+        y: 0
+        width: 184
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a225c1ea538f7ad0800000000000000
+      internalID: -2702296825040919895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dwarven Soldier_21
+      rect:
+        serializedVersion: 2
+        x: 3496
+        y: 0
+        width: 184
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5aba0df71f6abb20800000000000000
+      internalID: 3150953038119352926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dwarven Soldier_22
+      rect:
+        serializedVersion: 2
+        x: 3669
+        y: 0
+        width: 184
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24bc3f05daebfb40800000000000000
+      internalID: 5475227972803540015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dwarven Soldier_23
+      rect:
+        serializedVersion: 2
+        x: 3864
+        y: 0
+        width: 184
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8c821e6781193c0800000000000000
+      internalID: -4354672465827804934
       vertices: []
       indices: 
       edges: []
