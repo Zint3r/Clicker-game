@@ -195,10 +195,10 @@ TextureImporter:
       name: Pirate_0
       rect:
         serializedVersion: 2
-        x: 12
+        x: 13
         y: 8
         width: 76
-        height: 173
+        height: 181
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,10 +216,10 @@ TextureImporter:
       name: Pirate_1
       rect:
         serializedVersion: 2
-        x: 107
-        y: 8
+        x: 108
+        y: 9
         width: 76
-        height: 175
+        height: 181
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,7 +240,7 @@ TextureImporter:
         x: 203
         y: 8
         width: 90
-        height: 173
+        height: 181
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,10 +258,10 @@ TextureImporter:
       name: Pirate_3
       rect:
         serializedVersion: 2
-        x: 309
+        x: 296
         y: 8
-        width: 101
-        height: 173
+        width: 114
+        height: 181
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
         serializedVersion: 2
         x: 420
         y: 8
-        width: 146
+        width: 154
         height: 180
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5752514, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -300,12 +300,12 @@ TextureImporter:
       name: Pirate_5
       rect:
         serializedVersion: 2
-        x: 574
+        x: 575
         y: 8
         width: 156
         height: 181
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.67662364, y: 0.49999997}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -324,9 +324,9 @@ TextureImporter:
         x: 758
         y: 8
         width: 140
-        height: 179
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 181
+      alignment: 9
+      pivot: {x: 0.62935704, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -342,10 +342,10 @@ TextureImporter:
       name: Pirate_7
       rect:
         serializedVersion: 2
-        x: 912
+        x: 911
         y: 8
-        width: 111
-        height: 180
+        width: 126
+        height: 181
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -408,7 +408,7 @@ TextureImporter:
         x: 1359
         y: 8
         width: 156
-        height: 165
+        height: 186
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -427,9 +427,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1527
-        y: 47
+        y: 8
         width: 119
-        height: 127
+        height: 186
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -448,9 +448,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1668
-        y: 16
+        y: 8
         width: 104
-        height: 139
+        height: 186
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -471,7 +471,7 @@ TextureImporter:
         x: 1798
         y: 8
         width: 113
-        height: 89
+        height: 186
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -492,7 +492,7 @@ TextureImporter:
         x: 1934
         y: 8
         width: 141
-        height: 60
+        height: 186
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -636,10 +636,10 @@ TextureImporter:
       name: Pirate_22
       rect:
         serializedVersion: 2
-        x: 2088
+        x: 2091
         y: 8
         width: 171
-        height: 35
+        height: 186
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

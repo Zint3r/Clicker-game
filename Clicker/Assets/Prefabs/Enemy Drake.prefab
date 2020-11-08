@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1249940478858751318}
   - component: {fileID: 1249940478858751319}
   - component: {fileID: 1249940478858751316}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Enemy Drake
   m_TagString: Untagged
   m_Icon: {fileID: 0}

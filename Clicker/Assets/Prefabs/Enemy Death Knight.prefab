@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4408469421160724027}
   - component: {fileID: 4408469421160724026}
   - component: {fileID: 4408469421160724025}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Enemy Death Knight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
