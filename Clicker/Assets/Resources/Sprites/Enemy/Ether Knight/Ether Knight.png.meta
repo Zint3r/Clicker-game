@@ -192,9 +192,9 @@ TextureImporter:
         x: 7
         y: 12
         width: 157
-        height: 251
+        height: 258
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -213,9 +213,9 @@ TextureImporter:
         x: 162
         y: 12
         width: 169
-        height: 253
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 258
+      alignment: 9
+      pivot: {x: 0.4688764, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -235,8 +235,8 @@ TextureImporter:
         y: 12
         width: 158
         height: 258
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3594397, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,12 +252,12 @@ TextureImporter:
       name: Ether Knight_3
       rect:
         serializedVersion: 2
-        x: 511
+        x: 509
         y: 12
-        width: 177
+        width: 180
         height: 258
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -276,9 +276,9 @@ TextureImporter:
         x: 707
         y: 12
         width: 171
-        height: 210
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 258
+      alignment: 9
+      pivot: {x: 0.21306445, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -297,9 +297,9 @@ TextureImporter:
         x: 893
         y: 12
         width: 158
-        height: 207
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 257
+      alignment: 9
+      pivot: {x: 0.21894276, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -318,9 +318,9 @@ TextureImporter:
         x: 1067
         y: 12
         width: 148
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 258
+      alignment: 9
+      pivot: {x: 0.24584219, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -339,9 +339,9 @@ TextureImporter:
         x: 1232
         y: 12
         width: 135
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 258
+      alignment: 9
+      pivot: {x: 0.4032534, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -360,9 +360,9 @@ TextureImporter:
         x: 1375
         y: 12
         width: 140
-        height: 203
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 258
+      alignment: 9
+      pivot: {x: 0.5474714, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -378,12 +378,12 @@ TextureImporter:
       name: Ether Knight_9
       rect:
         serializedVersion: 2
-        x: 1558
+        x: 1559
         y: 12
         width: 153
-        height: 236
+        height: 258
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -404,7 +404,7 @@ TextureImporter:
         width: 174
         height: 258
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -420,12 +420,12 @@ TextureImporter:
       name: Ether Knight_11
       rect:
         serializedVersion: 2
-        x: 1907
+        x: 1908
         y: 12
         width: 160
-        height: 224
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 258
+      alignment: 9
+      pivot: {x: 0.5155342, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -442,11 +442,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2088
-        y: 63
+        y: 12
         width: 151
-        height: 161
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 258
+      alignment: 9
+      pivot: {x: 0.61933464, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -462,12 +462,12 @@ TextureImporter:
       name: Ether Knight_13
       rect:
         serializedVersion: 2
-        x: 2258
-        y: 56
-        width: 133
-        height: 170
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2257
+        y: 12
+        width: 136
+        height: 258
+      alignment: 9
+      pivot: {x: 0.5570427, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -484,11 +484,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2410
-        y: 26
+        y: 12
         width: 175
-        height: 162
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 258
+      alignment: 9
+      pivot: {x: 0.43870535, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -504,12 +504,12 @@ TextureImporter:
       name: Ether Knight_15
       rect:
         serializedVersion: 2
-        x: 2607
+        x: 2608
         y: 12
         width: 189
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 258
+      alignment: 9
+      pivot: {x: 0.3420901, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -528,9 +528,9 @@ TextureImporter:
         x: 2810
         y: 12
         width: 124
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 258
+      alignment: 9
+      pivot: {x: 0.5908498, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -549,9 +549,9 @@ TextureImporter:
         x: 2955
         y: 12
         width: 116
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 258
+      alignment: 9
+      pivot: {x: 0.5832414, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -570,9 +570,9 @@ TextureImporter:
         x: 3086
         y: 12
         width: 107
-        height: 202
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 258
+      alignment: 9
+      pivot: {x: 0.5977635, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -591,9 +591,9 @@ TextureImporter:
         x: 3211
         y: 12
         width: 109
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 258
+      alignment: 9
+      pivot: {x: 0.6033521, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -612,9 +612,9 @@ TextureImporter:
         x: 3338
         y: 12
         width: 123
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 258
+      alignment: 9
+      pivot: {x: 0.5967015, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
